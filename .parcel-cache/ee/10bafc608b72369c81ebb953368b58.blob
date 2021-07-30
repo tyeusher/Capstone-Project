@@ -1,0 +1,22 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "Header", function () {
+  return _HeaderDefault.default;
+});
+_parcelHelpers.export(exports, "Main", function () {
+  return _MainDefault.default;
+});
+_parcelHelpers.export(exports, "Footer", function () {
+  return _FooterDefault.default;
+});
+_parcelHelpers.export(exports, "Nav", function () {
+  return _NavDefault.default;
+});
+var _Header = require("./Header");
+var _HeaderDefault = _parcelHelpers.interopDefault(_Header);
+var _Main = require("./Main");
+var _MainDefault = _parcelHelpers.interopDefault(_Main);
+var _Footer = require("./Footer");
+var _FooterDefault = _parcelHelpers.interopDefault(_Footer);
+var _Nav = require("./Nav");
+var _NavDefault = _parcelHelpers.interopDefault(_Nav);

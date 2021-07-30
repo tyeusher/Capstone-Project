@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel-build": "parcel build index.html && cp _redirects ./dist/",
+    "serve": "parcel index.html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,7 +23,9 @@
     "stylelint-vscode": "^7.0.0-6"
   },
   "dependencies": {
+    "html-literal": "^1.1.0",
     "node": "^15.8.0",
-    "yargs-parser": ">=13.1.2"    
+    "parcel": "^2.0.0-beta.2",
+    "yargs-parser": ">=13.1.2"
   }
 }

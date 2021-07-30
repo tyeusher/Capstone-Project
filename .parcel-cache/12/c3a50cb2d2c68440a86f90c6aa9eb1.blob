@@ -1,0 +1,10 @@
+var _components = require('./components');
+function render() {
+  document.querySelector('#root').innerHTML = `
+    ${_components.Header()}
+    ${_components.Nav()}
+    ${_components.Main()}
+    ${_components.Footer()}
+    `;
+}
+render();

@@ -1,0 +1,12 @@
+var _components = require("./components");
+// import this from components
+// where we want to render the info
+function render() {
+  document.querySelector("#root").innerHTML = `
+    ${_components.Header()}
+    ${_components.Nav()}
+    ${_components.Main()}
+    ${_components.Footer()}
+    `;
+}
+render();
