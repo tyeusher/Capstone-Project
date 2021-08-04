@@ -1,5 +1,55 @@
 import html from "html-literal";
-export default () =>
-  html`
-    <h1>test</h1>
-  `;
+export default () => html`
+
+      <div class="welcome">
+          <h1>WELCOME TO AFTER EARTH<span>.</span></h1>
+          <img class="logo"src="C:\Users\Tye\Desktop\ufo.jpg" width="300">
+      </div>
+
+      <h3 class="divider">Explore Mars</h3>
+
+      <div class="wrapper">
+          <div class="eachButton">
+        <a href ="buyHomes.html"><span>Buy Homes!</span></a>
+        <a href="#"><span>Restaurants!</span></a>
+        <a href="#"><span>Shopping!</span></a>
+        <a href="#"><span>Why Mars!</span></a>
+    </div>
+    </div>
+
+
+
+
+    <h3 class="divider">Mars Residents Feedback</h3>
+
+    <div class="wrap">
+        <div class="card">
+        <img src="C:\Users\Tye\Desktop\mikejack.jpg" width="250">
+        <div class="container">
+            <h2>Michael Jackson</h2>
+            <p>"Being on Mars, you just cant BEAT IT!"</p>
+
+        </div>
+    </div>
+
+    <div class="card">
+    <img src="C:\Users\Tye\Desktop\realjoker.jpg" width="250" >
+    <div class="container">
+        <h2>Joker</h2>
+        <p>"Lets turn this nice place into a gotham!"</p>
+
+    </div>
+    </div>
+
+
+    <div class="card">
+    <img src="C:\Users\Tye\Desktop\dragonfly.jpg" width="250" >
+    <div class="container">
+        <h2>Dragon Fly Jones</h2>
+        <p>"I love it here so far."</p>
+
+    </div>
+    </div>
+    </div>
+
+    `;
