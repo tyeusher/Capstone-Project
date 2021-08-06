@@ -1,11 +1,8 @@
 import html from "html-literal";
 
 export default () => html`
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1"
-        >AFTER <span class="earth">EARTH</span></span
-      >
-    </div>
-  </nav>
+import html from "html-literal";
+
+export default () => html``;
+
 `;
