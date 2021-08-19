@@ -23,6 +23,8 @@
     "stylelint-vscode": "^7.0.0-6"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "html-literal": "^1.1.0",
     "i": "^0.3.6",
     "navigo": "^7.1.3",

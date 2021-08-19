@@ -1,5 +1,12 @@
 import html from "html-literal";
 
+import home1 from "../../images/he.jpg";
+import home2 from "../../images/he2.jpg";
+import home3 from "../../images/he3.jpg";
+import home4 from "../../images/he4.jpg";
+import home5 from "../../images/he5.jpg";
+import home6 from "../../images/he6.jpg";
+
 export default () => html`
 <div class="buy-home">
   <h3 class="divider">Explore Homes</h3>
@@ -38,7 +45,7 @@ export default () => html`
         <div class="col-md-4 product-grid">
             <div class="image">
                 <a href="#">
-                    <img src="C:\Users\Tye\Desktop\he2.jpg" class="w-100" >
+                    <img src="${home1}" class="w-100" >
                     <div class="overlay">
                         <div class="detail">Planet Neptune<br>4 Bedrooms<br>2 Baths<br>Backyard</div>
                     </div>
@@ -54,7 +61,7 @@ export default () => html`
         <div class="col-md-4 product-grid">
             <div class="image">
                 <a href="#">
-                    <img src="C:\Users\Tye\Desktop\he.jpg" class="w-100">
+                    <img src="=${home2}" class="w-100">
                     <div class="overlay">
                         <div class="detail">Planet Mars<br>7 Bedrooms<br>2 Baths<br>Backyard</div>
                     </div>
@@ -69,7 +76,7 @@ export default () => html`
         <div class="col-md-4 product-grid">
             <div class="image">
                 <a href="#">
-                    <img src="C:\Users\Tye\Desktop\he3.jpg" class="w-100">
+                    <img src="${home3}" class="w-100">
                     <div class="overlay">
                         <div class="detail">Planet Pluto<br>6 Bedrooms<br>3 Baths<br>Backyard</div>
                     </div>
@@ -85,7 +92,7 @@ export default () => html`
         <div class="col-md-4 product-grid">
             <div class="image">
                 <a href="#">
-                    <img src="C:\Users\Tye\Desktop\he4.jpg" class="w-100">
+                    <img src="${home4}" class="w-100">
                     <div class="overlay">
                         <div class="detail">Planet Neptune<br>3 Bedrooms<br>1 Baths<br>Backyard</div>
                     </div>
@@ -100,7 +107,7 @@ export default () => html`
         <div class="col-md-4 product-grid">
             <div class="image">
                 <a href="#">
-                    <img src="C:\Users\Tye\Desktop\he6.jpg" class="w-100">
+                    <img src="${home5}" class="w-100">
                     <div class="overlay">
                         <div class="detail">Planet Mars<br>6 Bedrooms<br>3 Baths<br>Backyard</div>
                     </div>
@@ -115,7 +122,7 @@ export default () => html`
         <div class="col-md-4 product-grid">
             <div class="image">
                 <a href="#">
-                    <img src="C:\Users\Tye\Desktop\he7.png" class="w-100">
+                    <img src="${home6}" class="w-100">
                     <div class="overlay">
                         <div class="detail">Planet Venus<br>3 Bedrooms<br>2 Baths<br>Backyard</div>
                     </div>
