@@ -1,0 +1,295 @@
+*{
+  font-family: 'Zen Loop', cursive;
+
+}
+
+.homeView .navbar-brand mb-0 h1{
+  font-weight: bold;
+}
+
+.homeView .welcome{
+text-align: center;
+margin-top: 3em;
+letter-spacing: 0.50em;
+font-family: 'Zen Loop', cursive;
+
+
+}
+.homeView .logo{
+  position: relative;
+  bottom: 1em;
+}
+
+
+
+/* wrapper isnt in center or i have to push it right forcefully position relative left, on inspect the wrapper is out os sync*/
+.homeView .wrapper{
+  position: relative;
+  left: 25%;
+  margin-top: 5em;
+}
+
+
+.homeView .wrapper a{
+  display: inline;
+  margin: 1em;
+
+
+
+}
+
+/* why is the wrapper not in center? im using right 80px */
+.homeView a{
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  position: relative;
+  right: 80px;
+  transition: all .35s;
+}
+
+
+
+.homeView a span{
+  position: relative;
+  z-index: 2;
+  margin: 2em
+}
+
+.homeView a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+
+  transition: all .35s;
+}
+
+.homeView a:hover{
+  color: #fff;
+}
+
+.homeView a:hover:after{
+  width: 100%;
+}
+
+.homeView .divider {
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  margin: 2em;
+}
+.homeView .divider:before, .divider:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.homeView .divider:before {
+  background: linear-gradient(to right, transparent, #818078);
+  right: .5em;
+  margin-left: -50%;
+}
+.homeView .divider:after {
+  background: linear-gradient(to right, #818078, transparent);
+  left: .5em;
+  margin-right: -50%;
+}
+
+.homeView .images{
+  text-align: center;
+}
+
+
+
+.homeView .wrap{
+  margin-left: 157px;
+
+}
+
+.homeView .card{
+  box-shadow: 0 4px 8px;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.homeView .card p{
+font-size: 25px;
+font-weight: bold;
+}
+
+.homeView .welcome img{
+  width: 250px;
+}
+
+
+/* Product Grid */
+.buy-home .product-grid{
+padding-bottom: 20px;
+padding-top: 20px;
+}
+.buy-home .product-grid:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buy-home .image{
+position: relative;
+}
+.buy-home .overlay{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: rgba(67, 68, 68, 0.7);
+}
+.buy-home .image:hover .overlay{
+opacity: 1;
+}
+.buy-home .detail{
+color: #fff;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+.buy-home .thisdetail{
+color: #fff;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 80%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+.buy-home .buy{
+background-color: transparent;
+color: #434444;
+border-radius: 0;
+border: 1px solid #434444;
+width: 100%;
+margin-top: 20px;
+}
+.buy-home .buy:hover{
+background-color: #434444;
+color: #fff;
+}
+.buy-home .container{
+margin-top: 3%;
+
+}
+
+.buy-home .container img{
+height:15em;
+}
+.buy-home .rem{
+  margin: 0 auto;
+  height: 60px;
+  width: 500px;
+  background: #5454ff;
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+}
+.buy-home .center{
+color: white;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.buy-home li:hover {
+
+  cursor: pointer;
+}
+
+.buy-home ul li ul {
+
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.buy-home ul li:hover > ul,
+.buy-home ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.buy-home .image .w-80{
+  height: 19em;
+
+}
+
+
+
+.buy-home .divider {
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  margin: 2em;
+}
+.buy-home .divider:before, .divider:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.buy-home .divider:before {
+  background: linear-gradient(to right, transparent, #818078);
+  right: .5em;
+  margin-left: -50%;
+}
+.buy-home .divider:after {
+  background: linear-gradient(to right, #818078, transparent);
+  left: .5em;
+  margin-right: -50%;
+}
+
+
+.buy-home .btn-outline-dark{
+    opacity: 0.6;
+}
+
+.buy-home .filterlist{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+
+.buy-home .btn{
+  margin: 0.10em;
+}

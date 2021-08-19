@@ -1,0 +1,139 @@
+*{
+  font-family: 'Zen Loop', cursive;
+
+}
+
+
+
+.navbar-brand mb-0 h1{
+  font-weight: bold;
+}
+
+.welcome{
+text-align: center;
+margin-top: 3em;
+letter-spacing: 0.50em;
+
+
+}
+.logo{
+  position: relative;
+  bottom: 1em;
+}
+
+
+
+/* wrapper isnt in center or i have to push it right forcefully position relative left, on inspect the wrapper is out os sync*/
+.wrapper{
+  position: relative;
+  left: 25%;
+  margin-top: 5em;
+}
+
+
+.wrapper a{
+  display: inline;
+  margin: 1em;
+
+
+
+}
+
+/* why is the wrapper not in center? im using right 80px */
+a{
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+
+  position: relative;
+  right: 80px;
+  transition: all .35s;
+}
+
+
+
+a span{
+  position: relative;
+  z-index: 2;
+  margin: 2em
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+.divider {
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  margin: 2em;
+}
+.divider:before, .divider:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.divider:before {
+  background: linear-gradient(to right, transparent, #818078);
+  right: .5em;
+  margin-left: -50%;
+}
+.divider:after {
+  background: linear-gradient(to right, #818078, transparent);
+  left: .5em;
+  margin-right: -50%;
+}
+
+.images{
+  text-align: center;
+}
+
+
+
+.wrap{
+  margin-left: 157px;
+
+}
+
+#card{
+  box-shadow: 0 4px 8px;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.card p{
+font-size: 25px;
+font-weight: bold;
+}
+
+/*# sourceMappingURL=index.HASH_REF_e47495112d23bc988c07908fcd6baeff.css.map */

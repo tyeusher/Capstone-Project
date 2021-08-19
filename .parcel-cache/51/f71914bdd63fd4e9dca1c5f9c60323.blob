@@ -1,0 +1,12 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "BuyHomes", function () {
+  return _BuyHomesDefault.default;
+});
+_parcelHelpers.export(exports, "Restaurants", function () {
+  return _RestaurantsDefault.default;
+});
+var _BuyHomes = require("./BuyHomes");
+var _BuyHomesDefault = _parcelHelpers.interopDefault(_BuyHomes);
+var _Restaurants = require("./Restaurants");
+var _RestaurantsDefault = _parcelHelpers.interopDefault(_Restaurants);

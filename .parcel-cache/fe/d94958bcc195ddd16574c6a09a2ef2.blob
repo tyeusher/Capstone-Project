@@ -1,0 +1,25 @@
+var _components = require("./components");
+var _store = require("./store");
+var _navigo = require("navigo");
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _navigoDefault = _parcelHelpers.interopDefault(_navigo);
+var _lodash = require("lodash");
+const router = new _navigoDefault.default(window.location.origin);
+router.on({
+  ":page": params => render(_store[_lodash.capitalize(params.page)]),
+  "/": () => render(_store.Home)
+}).resolve();
+function render(st = _store.Home) {
+  document.querySelector("#root").innerHTML = `
+    ${_components.Header(st)}
+    ${_components.Nav(_store.Links)}
+    ${_components.Main(st)}
+    ${_components.Footer()}
+    `;
+  router.updatePageLinks();
+}
+render(_store.Home);
+function addEventListeners() {
+  // add menu toggle to bars icon in nav bar
+  document.querySelector(".fa-bars").addEventListener("click", () => document.querySelector("nav > ul").classList.toggle("hidden--mobile"));
+}

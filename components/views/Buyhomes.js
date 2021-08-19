@@ -1,0 +1,134 @@
+import html from "html-literal";
+
+export default () => html`
+<div class="buy-home">
+  <h3 class="divider">Explore Homes</h3>
+  <div class="filterlist">
+    <div class="filter-price">
+    <span class="price-title">Price</span>
+    <button type="button" class="btn btn-outline-dark" onclick="oneToFour()">100,000 - 400,000</button>
+    <button type="button" class="btn btn-outline-dark fiveToSeven()">500,000 - 700,000</button>
+    <button type="button" class="btn btn-outline-dark eightToTen()">800,000, 100,000</button>
+</div>
+<div class="filter-bedroom">
+    <span class="bedroomTitle">Bedrooms</span>
+
+    <button type="button" class="btn btn-outline-dark oneThreeBed()">1 - 3 </button>
+    <button type="button" class="btn btn-outline-dark fourFiveBed()">4 - 5</button>
+    <button type="button" class="btn btn-outline-dark sixEightBed()">6 - 8</button>
+
+</div>
+<div class="filter-baths">
+    <span class="bathTitle">Baths</span>
+    <button type="button" class="btn btn-outline-dark twoToFour oneTwoBath()">1 - 2</button>
+    <button type="button" class="btn btn-outline-dark threeFourBath()">3 - 4/button>
+</div>
+</div>
+
+
+
+
+
+
+  <div class="container">
+    <hr>
+
+    <div class="row">
+        <!-- Product  -->
+        <div class="col-md-4 product-grid">
+            <div class="image">
+                <a href="#">
+                    <img src="C:\Users\Tye\Desktop\he2.jpg" class="w-100" >
+                    <div class="overlay">
+                        <div class="detail">Planet Neptune<br>4 Bedrooms<br>2 Baths<br>Backyard</div>
+                    </div>
+                </a>
+            </div>
+
+            <h5 class="text-center">Price: $800,000</h5>
+
+        </div>
+        <!-- ./Product -->
+
+        <!-- Product  -->
+        <div class="col-md-4 product-grid">
+            <div class="image">
+                <a href="#">
+                    <img src="C:\Users\Tye\Desktop\he.jpg" class="w-100">
+                    <div class="overlay">
+                        <div class="detail">Planet Mars<br>7 Bedrooms<br>2 Baths<br>Backyard</div>
+                    </div>
+                </a>
+            </div>
+            <h5 class="text-center">Price: $500,000</h5>
+
+        </div>
+        <!-- ./Product -->
+
+        <!-- Product  -->
+        <div class="col-md-4 product-grid">
+            <div class="image">
+                <a href="#">
+                    <img src="C:\Users\Tye\Desktop\he3.jpg" class="w-100">
+                    <div class="overlay">
+                        <div class="detail">Planet Pluto<br>6 Bedrooms<br>3 Baths<br>Backyard</div>
+                    </div>
+                </a>
+            </div>
+
+            <h5 class="text-center">Price: $400,000.00</h5>
+
+        </div>
+        <!-- ./Product -->
+
+        <!-- Product  -->
+        <div class="col-md-4 product-grid">
+            <div class="image">
+                <a href="#">
+                    <img src="C:\Users\Tye\Desktop\he4.jpg" class="w-100">
+                    <div class="overlay">
+                        <div class="detail">Planet Neptune<br>3 Bedrooms<br>1 Baths<br>Backyard</div>
+                    </div>
+                </a>
+            </div>
+            <h5 class="text-center">Price: $400,000</h5>
+
+        </div>
+        <!-- ./Product -->
+
+        <!-- Product  -->
+        <div class="col-md-4 product-grid">
+            <div class="image">
+                <a href="#">
+                    <img src="C:\Users\Tye\Desktop\he6.jpg" class="w-100">
+                    <div class="overlay">
+                        <div class="detail">Planet Mars<br>6 Bedrooms<br>3 Baths<br>Backyard</div>
+                    </div>
+                </a>
+            </div>
+            <h5 class="text-center">Price: $700,000</h5>
+
+        </div>
+        <!-- ./Product -->
+
+        <!-- Product  -->
+        <div class="col-md-4 product-grid">
+            <div class="image">
+                <a href="#">
+                    <img src="C:\Users\Tye\Desktop\he7.png" class="w-100">
+                    <div class="overlay">
+                        <div class="detail">Planet Venus<br>3 Bedrooms<br>2 Baths<br>Backyard</div>
+                    </div>
+                </a>
+            </div>
+            <h5 class="text-center">Price: $400,000</h5>
+
+        </div>
+        <!-- ./Product -->
+
+    </div>
+
+</div>
+</div>
+</div>
+`;

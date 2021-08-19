@@ -1,0 +1,3 @@
+function oneToFour(){
+alert("kjcc")
+}

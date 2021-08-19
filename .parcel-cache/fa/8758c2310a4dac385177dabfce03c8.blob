@@ -1,0 +1,15 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "buyHomes", function () {
+  return _viewsDefault.default;
+});
+_parcelHelpers.export(exports, "restaurant", function () {
+  return _viewsDefault.default;
+});
+_parcelHelpers.export(exports, "Home", function () {
+  return _viewsDefault.default;
+});
+var _views = require("./views");
+var _viewsDefault = _parcelHelpers.interopDefault(_views);
+var _viewsDefault = _parcelHelpers.interopDefault(_views);
+var _viewsDefault = _parcelHelpers.interopDefault(_views);
