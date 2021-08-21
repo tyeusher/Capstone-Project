@@ -2,10 +2,11 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-
+import dotenv from "dotenv";
 import axios from "axios";
 const router = new Navigo(window.location.origin);
 
+dotenv.config();
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -17,6 +18,7 @@ function render(st = state.Home) {
 
   router.updatePageLinks();
 }
+
 
 
 router.hooks({//
@@ -31,7 +33,7 @@ router.hooks({//
       case "Home":
         axios
           .get(
-            `https://api.openweathermap.org/data/2.5/weather?appid=${f86f94a0a0b50648eefa264df8191ef0}&q=st.%20louis`
+            `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.WEATHER_API_KEY}&q=st.%20louis`
           )
           .then((response) => {
             state.Home.weather = {};

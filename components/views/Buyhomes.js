@@ -8,27 +8,30 @@ import home5 from "../../images/he5.jpg";
 import home6 from "../../images/he6.jpg";
 
 export default () => html`
+<div class="filtered-search">
+
+</div>
 <div class="buy-home">
   <h3 class="divider">Explore Homes</h3>
   <div class="filterlist">
     <div class="filter-price">
     <span class="price-title">Price</span>
-    <button type="button" class="btn btn-outline-dark" onclick="oneToFour()">100,000 - 400,000</button>
-    <button type="button" class="btn btn-outline-dark fiveToSeven()">500,000 - 700,000</button>
-    <button type="button" class="btn btn-outline-dark eightToTen()">800,000, 100,000</button>
+    <button type="button">100,000 - 400,000</button>
+    <button type="button">500,000 - 700,000</button>
+    <button type="button">800,000, 100,000</button>
 </div>
 <div class="filter-bedroom">
     <span class="bedroomTitle">Bedrooms</span>
 
-    <button type="button" class="btn btn-outline-dark oneThreeBed()">1 - 3 </button>
-    <button type="button" class="btn btn-outline-dark fourFiveBed()">4 - 5</button>
-    <button type="button" class="btn btn-outline-dark sixEightBed()">6 - 8</button>
+    <button type="button">1 - 3 </button>
+    <button type="button">4 - 5</button>
+    <button type="button">6 - 8</button>
 
 </div>
 <div class="filter-baths">
     <span class="bathTitle">Baths</span>
-    <button type="button" class="btn btn-outline-dark twoToFour oneTwoBath()">1 - 2</button>
-    <button type="button" class="btn btn-outline-dark threeFourBath()">3 - 4/button>
+    <button type="button"  twoToFour oneTwoBath()">1 - 2</button>
+    <button type="button"  threeFourBath()">3 - 4/button>
 </div>
 </div>
 

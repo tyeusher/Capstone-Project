@@ -4,18 +4,20 @@ import ufo from "../../images/ufo.jpg";
 import dragon from "../../images/dragonfly.jpg";
 import joker from "../../images/realjoker.jpg";
 
+
 const kelvinToFahrenheit = (kelvinTemp) =>
   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
 
 
 
 
-export default () => html`
+export default (st) => html`
 <div class="homeView">
   <div class="welcome">
     <h1>WELCOME TO AFTER EARTH</h1>
     <img src="${ufo}" class="logo"/>
   </div>
+
 
   <h3 class="divider">Explore Mars</h3>
   <div class="wrapper">

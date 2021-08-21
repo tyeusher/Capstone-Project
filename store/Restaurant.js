@@ -1,4 +1,4 @@
 export default {
-  header: "Restaurant",
+  header: "",
   view: "Restaurant"
 };
