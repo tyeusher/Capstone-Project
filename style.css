@@ -514,3 +514,96 @@ justify-content: space-around;
     font-size:25px;
   }
 
+  /* ============ */
+
+
+
+.shop-store body {
+	font-family: "Amatic SC", cursive;
+	padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.shop-store{
+  margin-top: 10em;
+}
+
+
+
+
+.shop-store .shoeTitle{
+text-align: center;
+color: red;
+opacity: 0.6;
+font-size: 400px;
+font-family: "Amatic SC", cursive;
+
+}
+
+.shop-store .menu {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #00613e;
+  font-family: "Amatic SC", cursive;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 800px;
+}
+.shop-store .item {
+	padding-left: 25px;
+	padding-right: 25px;
+  font-family: "Amatic SC", cursive;
+}
+.shop-store .heading {
+	text-align: center;
+	border-bottom: 3px solid black;
+  font-family: "Amatic SC", cursive;
+  margin-top: 2em;
+
+}
+.shop-store h1 {
+	font-size: 100px;
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+}
+.shop-store .heading span {
+	font-size: 40px;
+    color: #AA0114;
+    opacity: 0.6;
+    position: relative;
+
+    top: 2.5em;
+    font-family: "Amatic SC", cursive;
+
+
+}
+.shop-store h2 {
+	font-size: 30px;
+	background: black;
+margin-top: 1em;
+	color: #AA0114;
+	padding: 5px;
+	border-radius: 25px;
+	text-align: center;
+	letter-spacing: 4px;
+  font-family: "Amatic SC", cursive;
+}
+
+.shop-store span {
+font-size: 20px;
+font-weight: bold;
+padding: 20px;
+letter-spacing: 2px;
+font-family: "Amatic SC", cursive;
+margin-top: 2em;
+}
+
+.shop-store .shoes{
+margin-top: 2em;
+margin-bottom: 0.2em;
+font-family: "Amatic SC", cursive;
+}
+
