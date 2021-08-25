@@ -54,18 +54,17 @@ export default (st) => html`
       <p>" I love it here so far at mars, its nothing but SILENCE!SILENCE!!.</p>
       </div>
     </div>
+    <h3 class="divider">About Mars</h3>
+  </div>
+
+
+</div>
 </div>
 
-
-    <h3 class="divider">About Mars Mars</h3>
-  </div>
-  </div>
-
-  <h3 id="weather">
-    Temperature in ${st.weather.city} is
-    ${kelvinToFahrenheit(st.weather.temp)}F, feels like
-    ${kelvinToFahrenheit(st.weather.feelsLike)}F. Humidity is at
-    ${st.weather.humidity}%, and the weather is ... ${st.weather.description}
-  </h3>
-
+<h3 id="weather">
+  Temperature in ${st.weather.city} is
+  ${kelvinToFahrenheit(st.weather.temp)}F, feels like
+  ${kelvinToFahrenheit(st.weather.feelsLike)}F. Humidity is at
+  ${st.weather.humidity}%, and the weather is ... ${st.weather.description}
+</h3>
 `;

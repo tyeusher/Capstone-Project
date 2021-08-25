@@ -12,10 +12,47 @@ export default () => html`
 <div class="filtered-search">
 
 </div>
+
+
+
+<div class="home-holder">
+    <div class="buy-home-title">
+<h1 class="heading">BUY HOMES<span></span></h1>
+</div>
+
+
+
+<div class="home-buttons">
+                <div class="homes-price">
+                <a href="#"><button class="round" purchase>100k - 300k</button></a>
+                <a href="#"><button class="round" purchase>$400k - 600k</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                </div>
+
+                <div class="homes-bed">
+                <a href="#"><button class="round" purchase>1 - 2</button></a>
+                <a href="#"><button class="round" purchase>3 -4</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                </div>
+
+                <div class="homes-bath">
+                <a href="#"><button class="round" purchase>1 - 2</button></a>
+                <a href="#"><button class="round" purchase>3 -4</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                </div>
+
+                </div>
+                </div>
+
 <div class="buy-home">
 <div class="container">
 
-<h1 class="heading">Image Gallery with CSS Grid <span>& Flexbox Fallback</span></h1>
+
+
+
 
 <div class="gallery">
 
@@ -47,5 +84,6 @@ export default () => html`
 
 </div>
 
+</div>
 </div>
 `;

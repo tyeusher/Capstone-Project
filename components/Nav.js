@@ -3,6 +3,7 @@ import html from "html-literal";
 export default (links) => html`
 <!-- passed in link -->
 <!-- we are mapping over the links in the links .js and putting each title and text -->
+
 <div class="top-nav">
     <div class="title"><h1>after earth</h1></div>
   <ul>
@@ -13,7 +14,8 @@ export default (links) => html`
       )}
 
   </ul>
-  </div>
+</div>
+
 
 <!-- <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">

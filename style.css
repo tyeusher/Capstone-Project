@@ -3,6 +3,10 @@
 
 }
 
+.nav-bar{
+  color:red;
+}
+
 .top-nav{
  position: fixed;
  top: 0;
@@ -12,7 +16,6 @@
  justify-content: space-between;
  align-items: center;
  transform: 0.6s;
- padding: 40px 100px;
 
 
 }
@@ -36,6 +39,10 @@ opacity: 0.6;
 .top-nav ul li{
   position: relative;
   list-style: none;
+  font-size: 2em;
+  color: #ff003b;
+  font-weight: bold;
+
 
 }
 
@@ -49,9 +56,27 @@ transition: 0.5s;
 color: black;
 }
 
+.home-buttons{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
 
-.homeView .navbar-brand mb-0 h1{
-  font-weight: bold;
+.home-holder{
+  position: relative;
+  top: 10em;
+}
+.about-mars{
+  font-size: 15px;
+}
+
+.homeView{
+  position: relative;
+  bottom: 13em;
+}
+
+.buy-home{
+  margin-top: 20em;
 }
 
 .homeView .welcome{
@@ -59,6 +84,8 @@ text-align: center;
 margin-top: 10em;
 letter-spacing: 0.50em;
 font-family: 'Zen Loop', cursive;
+font-weight: 50;
+font-size:25px;
 
 
 }
@@ -137,6 +164,7 @@ font-family: 'Zen Loop', cursive;
   font-family: 'Zen Loop', cursive;
   font-weight: bold;
   margin: 2em;
+  font-size: 25px;
 }
 .homeView .divider:before, .divider:after {
   content: "";
@@ -392,9 +420,9 @@ font-family: "Amatic SC", cursive;
 
 
 
-
-
-
+.rest-view .jus{
+  padding-top: 20px;
+}
 
 .rest-view .front img{
   opacity: 0.6;
@@ -402,6 +430,10 @@ font-family: "Amatic SC", cursive;
 
 .rest-view{
   background-color: black;
+  width: 100vw;
+position: relative;
+top: 3em;
+
 }
 
 .rest-view .front{
@@ -410,6 +442,7 @@ font-family: "Amatic SC", cursive;
 }
 .rest-view .title{
   text-align: center;
+  margin-top: 1em;
   color: teal;
   font-weight: bold;
   letter-spacing: 1em;
