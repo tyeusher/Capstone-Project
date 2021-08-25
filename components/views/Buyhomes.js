@@ -6,139 +6,46 @@ import home3 from "../../images/he3.jpg";
 import home4 from "../../images/he4.jpg";
 import home5 from "../../images/he5.jpg";
 import home6 from "../../images/he6.jpg";
+import home7 from "../../images/marsHome3.jpg";
 
 export default () => html`
 <div class="filtered-search">
 
 </div>
 <div class="buy-home">
-  <h3 class="divider">Explore Homes</h3>
-  <div class="filterlist">
-    <div class="filter-price">
-    <span class="price-title">Price</span>
-    <button type="button">100,000 - 400,000</button>
-    <button type="button">500,000 - 700,000</button>
-    <button type="button">800,000, 100,000</button>
-</div>
-<div class="filter-bedroom">
-    <span class="bedroomTitle">Bedrooms</span>
+<div class="container">
 
-    <button type="button">1 - 3 </button>
-    <button type="button">4 - 5</button>
-    <button type="button">6 - 8</button>
+<h1 class="heading">Image Gallery with CSS Grid <span>& Flexbox Fallback</span></h1>
 
-</div>
-<div class="filter-baths">
-    <span class="bathTitle">Baths</span>
-    <button type="button"  twoToFour oneTwoBath()">1 - 2</button>
-    <button type="button"  threeFourBath()">3 - 4/button>
-</div>
-</div>
+<div class="gallery">
 
+    <div class="gallery-item">
+        <img class="gallery-image" src="${home1}" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+    </div>
 
+    <div class="gallery-item">
+        <img class="gallery-image" src="${home2}" alt="sunset behind San Francisco city skyline">
+    </div>
 
+    <div class="gallery-item">
+        <img class="gallery-image" src="${home3}" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+    </div>
 
+    <div class="gallery-item">
+        <img class="gallery-image" src="${home4}" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+    </div>
 
+    <div class="gallery-item">
+        <img class="gallery-image" src="${home5}" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+    </div>
 
-  <div class="container">
-    <hr>
-
-    <div class="row">
-        <!-- Product  -->
-        <div class="col-md-4 product-grid">
-            <div class="image">
-                <a href="#">
-                    <img src="${home1}" class="w-100" >
-                    <div class="overlay">
-                        <div class="detail">Planet Neptune<br>4 Bedrooms<br>2 Baths<br>Backyard</div>
-                    </div>
-                </a>
-            </div>
-
-            <h5 class="text-center">Price: $800,000</h5>
-
-        </div>
-        <!-- ./Product -->
-
-        <!-- Product  -->
-        <div class="col-md-4 product-grid">
-            <div class="image">
-                <a href="#">
-                    <img src="=${home2}" class="w-100">
-                    <div class="overlay">
-                        <div class="detail">Planet Mars<br>7 Bedrooms<br>2 Baths<br>Backyard</div>
-                    </div>
-                </a>
-            </div>
-            <h5 class="text-center">Price: $500,000</h5>
-
-        </div>
-        <!-- ./Product -->
-
-        <!-- Product  -->
-        <div class="col-md-4 product-grid">
-            <div class="image">
-                <a href="#">
-                    <img src="${home3}" class="w-100">
-                    <div class="overlay">
-                        <div class="detail">Planet Pluto<br>6 Bedrooms<br>3 Baths<br>Backyard</div>
-                    </div>
-                </a>
-            </div>
-
-            <h5 class="text-center">Price: $400,000.00</h5>
-
-        </div>
-        <!-- ./Product -->
-
-        <!-- Product  -->
-        <div class="col-md-4 product-grid">
-            <div class="image">
-                <a href="#">
-                    <img src="${home4}" class="w-100">
-                    <div class="overlay">
-                        <div class="detail">Planet Neptune<br>3 Bedrooms<br>1 Baths<br>Backyard</div>
-                    </div>
-                </a>
-            </div>
-            <h5 class="text-center">Price: $400,000</h5>
-
-        </div>
-        <!-- ./Product -->
-
-        <!-- Product  -->
-        <div class="col-md-4 product-grid">
-            <div class="image">
-                <a href="#">
-                    <img src="${home5}" class="w-100">
-                    <div class="overlay">
-                        <div class="detail">Planet Mars<br>6 Bedrooms<br>3 Baths<br>Backyard</div>
-                    </div>
-                </a>
-            </div>
-            <h5 class="text-center">Price: $700,000</h5>
-
-        </div>
-        <!-- ./Product -->
-
-        <!-- Product  -->
-        <div class="col-md-4 product-grid">
-            <div class="image">
-                <a href="#">
-                    <img src="${home6}" class="w-100">
-                    <div class="overlay">
-                        <div class="detail">Planet Venus<br>3 Bedrooms<br>2 Baths<br>Backyard</div>
-                    </div>
-                </a>
-            </div>
-            <h5 class="text-center">Price: $400,000</h5>
-
-        </div>
-        <!-- ./Product -->
-
+    <div class="gallery-item">
+        <img class="gallery-image" src="${home6}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
     </div>
 
 </div>
+
 </div>
+
 </div>
 `;

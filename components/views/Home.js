@@ -67,4 +67,5 @@ export default (st) => html`
     ${kelvinToFahrenheit(st.weather.feelsLike)}F. Humidity is at
     ${st.weather.humidity}%, and the weather is ... ${st.weather.description}
   </h3>
+
 `;

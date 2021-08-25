@@ -3,9 +3,6 @@
 
 }
 
-
-
-
 .top-nav{
  position: fixed;
  top: 0;
@@ -52,42 +49,6 @@ transition: 0.5s;
 color: black;
 }
 
-/* .top-nav ul{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.top-nav li{
-  position: relative;
-  list-style: none;
-  margin-left: 4em;
-
-}
-.top-nav ul li{
-position: relative;
-list-style: none;
-
-}.top-nav ul li a{
-  position: relative;
- margin: 0 15px;
- text-decoration: none;
-color: red;
-  }
-
-.top-nav .logo{
-  position: relative;
-  font-weight: 700;
-  color: red;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.6s;
-
-} */
-
-
 
 .homeView .navbar-brand mb-0 h1{
   font-weight: bold;
@@ -104,6 +65,7 @@ font-family: 'Zen Loop', cursive;
 .homeView .logo{
   position: relative;
   bottom: 1em;
+
 }
 
 
@@ -225,274 +187,84 @@ font-weight: bold;
 }
 
 
-/* Product Grid */
-.buy-home .product-grid{
-padding-bottom: 20px;
-padding-top: 20px;
-}
-.buy-home .product-grid:hover{
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.buy-home .image{
-position: relative;
-}
-.buy-home .overlay{
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-height: 100%;
-width: 100%;
-opacity: 0;
-transition: .5s ease;
-background-color: rgba(67, 68, 68, 0.7);
-}
-.buy-home .image:hover .overlay{
-opacity: 1;
-}
-.buy-home .detail{
-color: #fff;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-}
-.buy-home .thisdetail{
-color: #fff;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 80%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77).
+
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+:root {
+	/* Base font size */
+	font-size: 10px;
 }
 
-.buy-home .buy{
-background-color: transparent;
-color: #434444;
-border-radius: 0;
-border: 1px solid #434444;
-width: 100%;
-margin-top: 20px;
-}
-.buy-home .buy:hover{
-background-color: #434444;
-color: #fff;
-}
-.buy-home .container{
-margin-top: 3%;
-
-}
-
-.buy-home .container img{
-height:15em;
-}
-.buy-home .rem{
-  margin: 0 auto;
-  height: 60px;
-  width: 500px;
-  background: #5454ff;
-  border: none;
-  border-radius: 6px;
-  font-size: 25px;
-  color: #000;
-  cursor: pointer;
-}
-.buy-home .center{
-color: white;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-}
-.buy-home li:hover {
-
-  cursor: pointer;
-}
-
-.buy-home ul li ul {
-
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-
-.buy-home ul li:hover > ul,
-.buy-home ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.buy-home .image .w-80{
-  height: 19em;
-
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 
 
-.buy-home .divider {
-  text-align: center;
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  margin: 2em;
-}
-.buy-home .divider:before, .divider:after {
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}
-.buy-home .divider:before {
-  background: linear-gradient(to right, transparent, #818078);
-  right: .5em;
-  margin-left: -50%;
-}
-.buy-home .divider:after {
-  background: linear-gradient(to right, #818078, transparent);
-  left: .5em;
-  margin-right: -50%;
+.buy-home .container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
 }
 
-
-.buy-home .btn-outline-dark{
-    opacity: 0.6;
+.buy-home .heading {
+font-family: "Montserrat", Arial, sans-serif;
+font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
 }
 
-.buy-home .filterlist{
-display: flex;
-flex-flow: row wrap;
-justify-content: space-around;
+.buy-home .heading span {
+	display: block;
 }
 
-.buy-home .btn{
-  margin: 0.10em;
+.buy-home .gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
 }
 
-/* ============ */
-
-
-.restView > .container > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
+.buy-home .gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
 }
 
-.restView .container > a > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 0 2px 16px var(--shadow);
+.buy-home .gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
 }
 
-.restView .container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-auto-rows: 120px;
-  grid-auto-flow: dense;
+.buy-home .gallery-image:hover {
+	transform: scale(1.15);
 }
 
-.restView .horizontal {
-  grid-column: span 2;
-}
+/*
 
-.restView .vertical {
-  grid-row: span 2;
-}
+The following rule will only run if your browser supports CSS grid.
 
-.restView .big {
-  grid-column: span 2;
-  grid-row: span 2;
-}
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
 
-.restView .head1{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-
-  .restView .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .restView .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  .restView .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 2s ease-in-out;
-  }
-  .restView .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .restView .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-  .restView .card{
-    margin: 0 auto;
-  }
-
-  .restView #Arrows{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-
-  .restView .wrapper h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: Audiowide;
-  }
-  .img-area {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .restView .single-img{
-    padding:0 20px 20px;
-  }
-
-  .restView img:hover{
-    opacity: .5;
-    transition: .9s;
-  }
-
+*/
 
 
   /* ignore the code below */
@@ -607,3 +379,377 @@ margin-bottom: 0.2em;
 font-family: "Amatic SC", cursive;
 }
 
+.shop-store .round {
+  background: #00613e;
+
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none; }
+
+
+
+
+
+
+
+
+.rest-view .front img{
+  opacity: 0.6;
+}
+
+.rest-view{
+  background-color: black;
+}
+
+.rest-view .front{
+  display: flex;
+  justify-content: center;
+}
+.rest-view .title{
+  text-align: center;
+  color: teal;
+  font-weight: bold;
+  letter-spacing: 1em;
+  font-size: 2.50em;
+  margin-bottom: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+.rest-view .image--cover {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position:top ;
+}
+
+.rest .tit{
+  position: relative;
+  top: 3em;
+  text-align: center;
+}
+
+.rest-view .wrap{
+position: relative;
+width: 100%;
+  margin-bottom: 40px;
+height: 300px;
+background-color: orange;
+transform: skewY(-4deg);
+transform: skewY(4deg);
+opacity: 0.3;
+margin-top: 7%;
+}
+
+.rest-view .wraps .tit{
+align-items: center;
+position: relative;
+
+}
+
+.rest-view .page {
+max-width: 600px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 3px;
+margin-top: 55px;
+}
+.rest-view .menu-body {
+max-width: 680px;
+margin: 0 auto;
+display: block;
+color: rgb(92, 92, 92);
+}
+
+.rest-view .menu-section {
+margin: 10px;
+}
+
+.rest-view .menu-section-title {
+
+  font-size: 80px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+
+.rest-view .page{
+  background-color: red;
+  opacity: 0.6;
+}
+
+.rest-view .theTitle{
+  text-decoration: underline;
+  text-align: center;
+  font-size: large;
+  font-size: 3.5em;
+  color: white;
+  letter-spacing: 0.10em;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+
+.rest-view .menu-item {
+margin: 35px 0;
+font-size: 22px;
+color: white;
+font-weight: bold;
+font-family: arial;
+
+}
+
+.rest-view .title{
+  text-align: center;
+  color: teal;
+  font-weight: bold;
+  letter-spacing: 1em;
+  font-size: 2.50em;
+  margin-bottom: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.rest-view .tit{
+  font-size: 1.5em;
+}
+
+.rest-view .menu-item-name{
+
+font-weight: bold;
+margin-left: 50px;
+letter-spacing: 0.10em;
+letter-spacing: 5px;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.rest-view .menu-item-description {
+font-weight: normal;
+font-size: 22px;
+line-height: 1.5em;
+
+}
+
+.rest-view .menu-item-price{
+float: right;
+font-weight: bold;
+font-family: arial;
+margin-top: -24px;
+margin-right: 80px;
+color: white;
+}
+
+.rest-view .first-pic{
+
+  color: red;
+  display: flex;
+  opacity: 0.6;
+
+
+  justify-content: space-evenly;
+}
+
+.rest-view .dee{
+  margin-top: 6em;
+  font-size: 2em;
+
+}
+
+.rest-view .first-pic img{
+  border-radius: 20px;
+  opacity: 0.6;
+}
+
+.rest-view .detail-title, .detail-price{
+  text-align: center;
+}
+
+.rest-view .wraps{
+
+width: 100%;
+height: 300px;
+background-color: rebeccapurple;
+transform: skewY(4deg);
+transform: skewY(-4deg);
+margin-bottom: 60px;
+opacity: 0.6;
+
+}
+
+.rest-view .second-pic{
+
+display: flex;
+justify-content: space-evenly;
+  position: relative;
+
+}
+
+.rest-view .second-pic p{
+  color: red;
+  opacity: 0.6;
+}
+
+.rest-view img{
+  opacity: 0.6;
+  border-radius: 20px;
+}
+
+.rest-view .dee2{
+  margin-top: 6em;
+  font-size: 2em;
+}
+
+
+.rest-view .wrapper {
+  padding: 100px;
+ margin-left: 3em;
+}
+
+
+.rest-view p{
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 5px;
+}
+
+.rest-view .this{
+position: relative;
+width: 100%;
+height: 400px;
+background-color: teal;
+opacity: 0.3;
+border-radius: 20px;
+margin-top: 7%;
+font-family: 'Shadows Into Light', cursive;
+letter-spacing: 5px;
+
+}
+.rest-view .tit{
+position: relative;
+top: 3em;
+text-align: center;
+}
+.rest-view, body{
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/*Button Two*/
+.rest-view .button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+.rest-view .button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.rest-view .button-two span:after {
+  content: '»';
+  position: absolute;
+
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.rest-view .button-two:hover span {
+  padding-right: 25px;
+}
+
+.rest-view .button-two:hover span:after {
+
+  right: 0;
+}
+
+
+
+.news { box-sizing: border-box; font-family: Georgia, serif;
+  background: #fff url(https://subtlepatterns.com/patterns/lightpaperfibers.png); }
+
+.news #container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+.news h1, h2 {
+  font-family: 'Old Standard TT', serif;
+}
+.news h1 {
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.news h2 {
+  font-size: 2em;
+  font-style: italic;
+}
+.news header ul {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 0.5em 0;
+  width: 100%;
+}
+.news header ul li {
+  display: inline-block;
+  list-style: none;
+  width: 33%;
+}
+.news header ul li:first-child {
+  font-size: 0.8em;
+  text-indent: 1em;
+}
+.news header ul li:nth-child(2) {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.news header ul li:last-child {
+  text-align: right;
+}
+.news article h3 {
+  display: inline;
+}
+.news article p {
+  column-count: 4;
+  text-align: justify;
+}
+.news article p span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.news article p span span {
+  display: inline;
+  text-transform: uppercase;
+}
+.news article p cite {
+  display: block;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1em 0;
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.news section#content:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+}
