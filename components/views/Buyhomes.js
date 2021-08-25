@@ -2,7 +2,7 @@ import html from "html-literal";
 
 import home1 from "../../images/he.jpg";
 import home2 from "../../images/he2.jpg";
-import home3 from "../../images/he4.jpg";
+import home3 from "../../images/he3.jpg";
 import home4 from "../../images/he4.jpg";
 import home5 from "../../images/he5.jpg";
 import home6 from "../../images/he6.jpg";
