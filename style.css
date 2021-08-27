@@ -84,7 +84,7 @@ text-align: center;
 margin-top: 10em;
 letter-spacing: 0.50em;
 font-family: 'Zen Loop', cursive;
-font-weight: 50;
+
 font-size:25px;
 
 
@@ -112,6 +112,7 @@ font-size:25px;
 
 
 }
+
 
 /* why is the wrapper not in center? im using right 80px */
 .homeView a{

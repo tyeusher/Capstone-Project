@@ -75,3 +75,16 @@ router
 
 
 
+
+function er() {
+  alert("hfi")
+}
+
+let lo = document.getElementsByClassName('tester')
+
+
+lo.addEventListener('click', (){
+
+});
+
+

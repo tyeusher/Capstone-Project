@@ -20,7 +20,7 @@ export default () => html`
 <h1 class="heading">BUY HOMES<span></span></h1>
 </div>
 
-
+<button class="tester">frf</button>
 
 <div class="home-buttons">
                 <div class="homes-price">

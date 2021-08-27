@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
+    "watch": "nodemon --watch ./server -e js ./server/index.js",
     "serve": "parcel index.html"
   },
   "keywords": [],
@@ -25,6 +26,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "html-literal": "^1.1.0",
     "i": "^0.3.6",
     "navigo": "^7.1.3",

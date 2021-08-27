@@ -45,25 +45,6 @@ export default () => html
 		<p><span>TOP SELLER</span> <span></span></p>
 	</div>
 
-	<div class="item sides">
-		<h2>MAKE A ADD</h2>
-		<p><span>GREEN LACES</span> <span>$1</span></p>
-		<p><span>EXTRA SOCKS</span> <span>$2</span></p>
-		<p><span>SHOE POLISHER</span> <span>$8</span></p>
-		<p><span>BOTTOM GRIP CLAY</span> <span>$50</span></p>
-	</div>
-
-	<div class="item drinks">
-		<h2>INFORMATION</h2>
-		<p><span>LOCATION</span> <span>32 MARS RHODE</span></p>
-		<p><span>STORE HOURS</span> <span>4PM TP 12AM</span></p>
-		<p><span>STORE NUMBER</span> <span>4589</span></p>
-	</div>
-</div>
-
-<a href="#"><button class="round" purchase>$90.00</button></a>
-                </div>
-
 
 </div>
 
