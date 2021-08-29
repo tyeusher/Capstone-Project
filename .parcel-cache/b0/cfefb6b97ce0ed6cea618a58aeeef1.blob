@@ -1,0 +1,71 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+var _imagesMikejackJpg = require("../../images/mikejack.jpg");
+var _imagesMikejackJpgDefault = _parcelHelpers.interopDefault(_imagesMikejackJpg);
+var _imagesUfoJpg = require("../../images/ufo.jpg");
+var _imagesUfoJpgDefault = _parcelHelpers.interopDefault(_imagesUfoJpg);
+var _imagesDragonflyJpg = require("../../images/dragonfly.jpg");
+var _imagesDragonflyJpgDefault = _parcelHelpers.interopDefault(_imagesDragonflyJpg);
+var _imagesRealjokerJpg = require("../../images/realjoker.jpg");
+var _imagesRealjokerJpgDefault = _parcelHelpers.interopDefault(_imagesRealjokerJpg);
+const kelvinToFahrenheit = kelvinTemp => Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
+exports.default = st => _htmlLiteralDefault.default`
+<div class="homeView">
+  <div class="welcome">
+    <h1>WELCOME TO AFTER EARTH</h1>
+    <img src="${_imagesUfoJpgDefault.default}" class="logo"/>
+  </div>
+  <button id="der" onclick="er(2)">kmrkf</button>
+
+
+  <h3 class="divider">Explore Mars</h3>
+  <div class="wrapper">
+    <div class="eachButton">
+      <a href="#"><span>Buy Homes!</span></a>
+      <a href="#"><span>Restaurants!</span></a>
+      <a href="#"><span>Shopping</span></a>
+      <a href="#"><span>Shopping</span></a>
+    </div>
+  </div>
+
+  <h3 class="divider">Mars Residents Feedbacks.</h3>
+
+  <div class="wrap">
+    <div class="card">
+      <img src="${_imagesMikejackJpgDefault.default}" width="250px"/>
+      <div class= "container">
+        <h2>Michael Jackson</h2>
+        <p>"Being on Mars, you just cant BEAT IT!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="${_imagesRealjokerJpgDefault.default}" width="250px"/>
+      <div class="container">
+        <h2>Joker</h2>
+        <p>Lets turn this place into a Gotham!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="${_imagesDragonflyJpgDefault.default}" width="250px" />
+      <h2>"Dragon Fly Jones</h2>
+      <p>" I love it here so far at mars, its nothing but SILENCE!SILENCE!!.</p>
+      </div>
+    </div>
+    <h3 class="divider">About Mars</h3>
+  </div>
+
+
+</div>
+</div>
+
+<h3 id="weather">
+  Temperature in ${st.weather.city} is
+  ${kelvinToFahrenheit(st.weather.temp)}F, feels like
+  ${kelvinToFahrenheit(st.weather.feelsLike)}F. Humidity is at
+  ${st.weather.humidity}%, and the weather is ... ${st.weather.description}
+</h3>
+`;

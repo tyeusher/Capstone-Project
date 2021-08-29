@@ -1,0 +1,11 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+exports.default = st => _htmlLiteralDefault.default`
+<header>
+  <h1>
+    ${st.header}
+  </h1>
+</header>
+`;

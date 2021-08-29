@@ -1,0 +1,805 @@
+*{
+  font-family: 'Zen Loop', cursive;
+
+}
+
+.nav-bar{
+  color:red;
+}
+
+.top-nav{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ transform: 0.6s;
+
+
+}
+
+.top-nav .title{
+position: relative;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.6s;
+opacity: 0.6;
+
+}
+
+.top-nav ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-nav ul li{
+  position: relative;
+  list-style: none;
+  font-size: 2em;
+  color: #ff003b;
+  font-weight: bold;
+
+
+}
+
+.top-nav ul li a{
+position: relative;
+margin: 0 15px;
+text-decoration: none;
+letter-spacing: 2px;
+font-weight: 500px;
+transition: 0.5s;
+color: black;
+}
+
+.home-buttons{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.home-holder{
+  position: relative;
+  top: 10em;
+}
+.about-mars{
+  font-size: 15px;
+}
+
+.homeView{
+  position: relative;
+  bottom: 13em;
+}
+
+.buy-home{
+  margin-top: 20em;
+}
+
+.homeView .welcome{
+text-align: center;
+margin-top: 10em;
+letter-spacing: 0.50em;
+font-family: 'Zen Loop', cursive;
+
+font-size:25px;
+
+
+}
+.homeView .logo{
+  position: relative;
+  bottom: 1em;
+
+}
+
+
+
+/* wrapper isnt in center or i have to push it right forcefully position relative left, on inspect the wrapper is out os sync*/
+.homeView .wrapper{
+  position: relative;
+  left: 25%;
+  margin-top: 5em;
+}
+
+
+.homeView .wrapper a{
+  display: inline;
+  margin: 1em;
+
+
+
+}
+
+
+/* why is the wrapper not in center? im using right 80px */
+.homeView a{
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  position: relative;
+  right: 80px;
+  transition: all .35s;
+}
+
+
+
+.homeView a span{
+  position: relative;
+  z-index: 2;
+  margin: 2em
+}
+
+.homeView a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+
+  transition: all .35s;
+}
+
+.homeView a:hover{
+  color: #fff;
+}
+
+.homeView a:hover:after{
+  width: 100%;
+}
+
+.homeView .divider {
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  margin: 2em;
+  font-size: 25px;
+}
+.homeView .divider:before, .divider:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.homeView .divider:before {
+  background: linear-gradient(to right, transparent, #818078);
+  right: .5em;
+  margin-left: -50%;
+}
+.homeView .divider:after {
+  background: linear-gradient(to right, #818078, transparent);
+  left: .5em;
+  margin-right: -50%;
+}
+
+.homeView .images{
+  text-align: center;
+}
+
+
+
+.homeView .wrap{
+  margin-left: 157px;
+
+}
+
+.homeView .card{
+  box-shadow: 0 4px 8px;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.homeView .card p{
+font-size: 25px;
+font-weight: bold;
+}
+
+.homeView .welcome img{
+  width: 250px;
+}
+
+
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77).
+
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+
+.buy-home .container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.buy-home .heading {
+font-family: "Montserrat", Arial, sans-serif;
+font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.buy-home .heading span {
+	display: block;
+}
+
+.buy-home .gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.buy-home .gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.buy-home .gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.buy-home .gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
+
+*/
+
+
+  /* ignore the code below */
+
+
+  .link-area
+  {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    padding:15px;
+    border-radius:40px;
+    background:tomato;
+  }
+  .link-area a
+  {
+    text-decoration:none;
+    color:#fff;
+    font-size:25px;
+  }
+
+  /* ============ */
+
+
+
+.shop-store body {
+	font-family: "Amatic SC", cursive;
+	padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.shop-store{
+  margin-top: 10em;
+}
+
+
+
+
+.shop-store .shoeTitle{
+text-align: center;
+color: red;
+opacity: 0.6;
+font-size: 400px;
+font-family: "Amatic SC", cursive;
+
+}
+
+.shop-store .menu {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #00613e;
+  font-family: "Amatic SC", cursive;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 800px;
+}
+.shop-store .item {
+	padding-left: 25px;
+	padding-right: 25px;
+  font-family: "Amatic SC", cursive;
+}
+.shop-store .heading {
+	text-align: center;
+	border-bottom: 3px solid black;
+  font-family: "Amatic SC", cursive;
+  margin-top: 2em;
+
+}
+.shop-store h1 {
+	font-size: 100px;
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+}
+.shop-store .heading span {
+	font-size: 40px;
+    color: #AA0114;
+    opacity: 0.6;
+    position: relative;
+
+    top: 2.5em;
+    font-family: "Amatic SC", cursive;
+
+
+}
+.shop-store h2 {
+	font-size: 30px;
+	background: black;
+margin-top: 1em;
+	color: #AA0114;
+	padding: 5px;
+	border-radius: 25px;
+	text-align: center;
+	letter-spacing: 4px;
+  font-family: "Amatic SC", cursive;
+}
+
+.shop-store span {
+font-size: 20px;
+font-weight: bold;
+padding: 20px;
+letter-spacing: 2px;
+font-family: "Amatic SC", cursive;
+margin-top: 2em;
+}
+
+.shop-store .shoes{
+margin-top: 2em;
+margin-bottom: 0.2em;
+font-family: "Amatic SC", cursive;
+}
+
+.shop-store .round {
+  background: #00613e;
+
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none; }
+
+
+
+
+.rest-view .jus{
+  padding-top: 20px;
+}
+
+.rest-view .front img{
+  opacity: 0.6;
+}
+
+.rest-view{
+  background-color: black;
+  width: 100vw;
+position: relative;
+top: 3em;
+
+}
+
+.rest-view .front{
+  display: flex;
+  justify-content: center;
+}
+.rest-view .title{
+  text-align: center;
+  margin-top: 1em;
+  color: teal;
+  font-weight: bold;
+  letter-spacing: 1em;
+  font-size: 2.50em;
+  margin-bottom: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+.rest-view .image--cover {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position:top ;
+}
+
+.rest .tit{
+  position: relative;
+  top: 3em;
+  text-align: center;
+}
+
+.rest-view .wrap{
+position: relative;
+width: 100%;
+  margin-bottom: 40px;
+height: 300px;
+background-color: orange;
+transform: skewY(-4deg);
+transform: skewY(4deg);
+opacity: 0.3;
+margin-top: 7%;
+}
+
+.rest-view .wraps .tit{
+align-items: center;
+position: relative;
+
+}
+
+.rest-view .page {
+max-width: 600px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 3px;
+margin-top: 55px;
+}
+.rest-view .menu-body {
+max-width: 680px;
+margin: 0 auto;
+display: block;
+color: rgb(92, 92, 92);
+}
+
+.rest-view .menu-section {
+margin: 10px;
+}
+
+.rest-view .menu-section-title {
+
+  font-size: 80px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+
+.rest-view .page{
+  background-color: red;
+  opacity: 0.6;
+}
+
+.rest-view .theTitle{
+  text-decoration: underline;
+  text-align: center;
+  font-size: large;
+  font-size: 3.5em;
+  color: white;
+  letter-spacing: 0.10em;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+
+.rest-view .menu-item {
+margin: 35px 0;
+font-size: 22px;
+color: white;
+font-weight: bold;
+font-family: arial;
+
+}
+
+.rest-view .title{
+  text-align: center;
+  color: teal;
+  font-weight: bold;
+  letter-spacing: 1em;
+  font-size: 2.50em;
+  margin-bottom: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.rest-view .tit{
+  font-size: 1.5em;
+}
+
+.rest-view .menu-item-name{
+
+font-weight: bold;
+margin-left: 50px;
+letter-spacing: 0.10em;
+letter-spacing: 5px;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.rest-view .menu-item-description {
+font-weight: normal;
+font-size: 22px;
+line-height: 1.5em;
+
+}
+
+.rest-view .menu-item-price{
+float: right;
+font-weight: bold;
+font-family: arial;
+margin-top: -24px;
+margin-right: 80px;
+color: white;
+}
+
+.rest-view .first-pic{
+
+  color: red;
+  display: flex;
+  opacity: 0.6;
+
+
+  justify-content: space-evenly;
+}
+
+.rest-view .dee{
+  margin-top: 6em;
+  font-size: 2em;
+
+}
+
+.rest-view .first-pic img{
+  border-radius: 20px;
+  opacity: 0.6;
+}
+
+.rest-view .detail-title, .detail-price{
+  text-align: center;
+}
+
+.rest-view .wraps{
+
+width: 100%;
+height: 300px;
+background-color: rebeccapurple;
+transform: skewY(4deg);
+transform: skewY(-4deg);
+margin-bottom: 60px;
+opacity: 0.6;
+
+}
+
+.rest-view .second-pic{
+
+display: flex;
+justify-content: space-evenly;
+  position: relative;
+
+}
+
+.rest-view .second-pic p{
+  color: red;
+  opacity: 0.6;
+}
+
+.rest-view img{
+  opacity: 0.6;
+  border-radius: 20px;
+}
+
+.rest-view .dee2{
+  margin-top: 6em;
+  font-size: 2em;
+}
+
+
+.rest-view .wrapper {
+  padding: 100px;
+ margin-left: 3em;
+}
+
+
+.rest-view p{
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 5px;
+}
+
+.rest-view .this{
+position: relative;
+width: 100%;
+height: 400px;
+background-color: teal;
+opacity: 0.3;
+border-radius: 20px;
+margin-top: 7%;
+font-family: 'Shadows Into Light', cursive;
+letter-spacing: 5px;
+
+}
+.rest-view .tit{
+position: relative;
+top: 3em;
+text-align: center;
+}
+.rest-view, body{
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/*Button Two*/
+.rest-view .button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+.rest-view .button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.rest-view .button-two span:after {
+  content: '»';
+  position: absolute;
+
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.rest-view .button-two:hover span {
+  padding-right: 25px;
+}
+
+.rest-view .button-two:hover span:after {
+
+  right: 0;
+}
+
+
+
+.news { box-sizing: border-box; font-family: Georgia, serif;
+
+  background: #fff url(https://subtlepatterns.com/patterns/lightpaperfibers.png); }
+
+.news #container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+  color: #00613e;
+
+}
+.news h1, h2 {
+  color: #00613e;
+  font-family: 'Old Standard TT', serif;
+}
+.news h1 {
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: #00613e;
+}
+.news h2 {
+  color: #00613e;
+  font-size: 2em;
+  font-style: italic;
+}
+.news header ul {
+  border-top: 2px solid #00613e;
+  border-bottom: 2px solid #00613e;
+  padding: 0.5em 0;
+  width: 100%;
+}
+.news header ul li {
+  color: #00613e;
+  display: inline-block;
+  list-style: none;
+  width: 33%;
+}
+.news header ul li:first-child {
+  font-size: 0.8em;
+  color: #00613e;
+  text-indent: 1em;
+}
+.news header ul li:nth-child(2) {
+  text-align: center;
+  color: #00613e;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.news header ul li:last-child {
+  color: #00613e;
+  text-align: right;
+}
+.news article h3 {
+  display: inline;
+  color: #00613e;
+}
+.news article p {
+  column-count: 4;
+  text-align: justify;
+  color: #00613e;
+}
+.news article p span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #00613e;
+}
+.news article p span span {
+  display: inline;
+  text-transform: uppercase;
+  color: #00613e;
+}
+.news article p cite {
+  display: block;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1em 0;
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: left;
+  color: #00613e;
+  line-height: 1.5em;
+}
+.news section#content:after {
+  content: "";
+  color: #00613e;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1em;
+}

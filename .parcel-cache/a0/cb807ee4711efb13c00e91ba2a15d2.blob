@@ -1,0 +1,61 @@
+var _components = require("./components");
+var _store = require("./store");
+var _navigo = require("navigo");
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _navigoDefault = _parcelHelpers.interopDefault(_navigo);
+var _lodash = require("lodash");
+var _dotenv = require("dotenv");
+var _dotenvDefault = _parcelHelpers.interopDefault(_dotenv);
+var _axios = require("axios");
+var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+const router = new _navigoDefault.default(window.location.origin);
+_dotenvDefault.default.config();
+function render(st = _store.Home) {
+  document.querySelector("#root").innerHTML = `
+    ${_components.Header(st)}
+    ${_components.Nav(_store.Links)}
+    ${_components.Main(st)}
+    ${_components.Footer()}
+    `;
+  router.updatePageLinks();
+}
+// addEventListeners(st);
+// data()
+// function data(){
+// fetch("https://afterearth-capstone.herokuapp.com/status").then(response => response.json)
+// .then(data=>console.log(data))}
+router.hooks({
+  // 
+  before: (done, params) => {
+    const page = params && params.hasOwnProperty("page") ? _lodash.capitalize(params.page) : "Home";
+    switch (page) {
+      case "Home":
+        _axiosDefault.default.get(`https://api.openweathermap.org/data/2.5/weather?appid=${"f86f94a0a0b50648eefa264df8191ef0"}&q=st.%20louis`).then(response => {
+          _store.Home.weather = {};
+          // console.log(response, state.Home.weather);
+          _store.Home.weather.city = response.data.name;
+          _store.Home.weather.temp = response.data.main.temp;
+          _store.Home.weather.feelsLike = response.data.main.feels_like;
+          _store.Home.weather.humidity = response.data.main.humidity;
+          _store.Home.weather.description = response.data.weather[0]["description"];
+          done();
+        }).catch(err => console.log(err));
+        break;
+      default:
+        done();
+    }
+  }
+});
+function addEventListeners() {
+  // add menu toggle to bars icon in nav bar
+  document.querySelector(".fa-bars").addEventListener("click", () => document.querySelector("nav > ul").classList.toggle("hidden--mobile"));
+}
+router.on({
+  "/": () => render(_store.Home),
+  ":page": params => render(_store[_lodash.capitalize(params.page)])
+}).resolve();
+function er(yer) {
+  alert(yer);
+}
+let lo = document.getElementsByClassName('tester');
+lo.addEventListener('click', er(elem));

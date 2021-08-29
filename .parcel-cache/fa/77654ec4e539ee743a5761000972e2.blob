@@ -1,0 +1,32 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "Buyhomes", function () {
+  return _BuyhomesDefault.default;
+});
+_parcelHelpers.export(exports, "Restaurant", function () {
+  return _RestaurantDefault.default;
+});
+_parcelHelpers.export(exports, "Home", function () {
+  return _HomeDefault.default;
+});
+_parcelHelpers.export(exports, "Shopping", function () {
+  return _ShoppingDefault.default;
+});
+_parcelHelpers.export(exports, "Favorites", function () {
+  return _FavoritesDefault.default;
+});
+_parcelHelpers.export(exports, "News", function () {
+  return _NewsDefault.default;
+});
+var _Buyhomes = require("./Buyhomes");
+var _BuyhomesDefault = _parcelHelpers.interopDefault(_Buyhomes);
+var _Restaurant = require("./Restaurant");
+var _RestaurantDefault = _parcelHelpers.interopDefault(_Restaurant);
+var _Home = require("./Home");
+var _HomeDefault = _parcelHelpers.interopDefault(_Home);
+var _Shopping = require("./Shopping");
+var _ShoppingDefault = _parcelHelpers.interopDefault(_Shopping);
+var _Favorites = require("./Favorites");
+var _FavoritesDefault = _parcelHelpers.interopDefault(_Favorites);
+var _News = require("./News");
+var _NewsDefault = _parcelHelpers.interopDefault(_News);

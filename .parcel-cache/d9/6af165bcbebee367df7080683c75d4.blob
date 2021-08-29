@@ -1,0 +1,96 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+var _imagesHeJpg = require("../../images/he.jpg");
+var _imagesHeJpgDefault = _parcelHelpers.interopDefault(_imagesHeJpg);
+var _imagesHe2Jpg = require("../../images/he2.jpg");
+var _imagesHe2JpgDefault = _parcelHelpers.interopDefault(_imagesHe2Jpg);
+var _imagesHe3Jpg = require("../../images/he3.jpg");
+var _imagesHe3JpgDefault = _parcelHelpers.interopDefault(_imagesHe3Jpg);
+var _imagesHe4Jpg = require("../../images/he4.jpg");
+var _imagesHe4JpgDefault = _parcelHelpers.interopDefault(_imagesHe4Jpg);
+var _imagesHe5Jpg = require("../../images/he5.jpg");
+var _imagesHe5JpgDefault = _parcelHelpers.interopDefault(_imagesHe5Jpg);
+var _imagesHe6Jpg = require("../../images/he6.jpg");
+var _imagesHe6JpgDefault = _parcelHelpers.interopDefault(_imagesHe6Jpg);
+require("../../images/marsHome3.jpg");
+exports.default = () => _htmlLiteralDefault.default`
+<div class="filtered-search">
+
+</div>
+
+
+
+<div class="home-holder">
+    <div class="buy-home-title">
+<h1 class="heading">BUY HOMES<span></span></h1>
+</div>
+
+<button class="tester">frf</button>
+
+<div class="home-buttons">
+                <div class="homes-price">
+                <a href="#"><button class="round" purchase>100k - 300k</button></a>
+                <a href="#"><button class="round" purchase>$400k - 600k</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                </div>
+
+                <div class="homes-bed">
+                <a href="#"><button class="round" purchase>1 - 2</button></a>
+                <a href="#"><button class="round" purchase>3 -4</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                </div>
+
+                <div class="homes-bath">
+                <a href="#"><button class="round" purchase>1 - 2</button></a>
+                <a href="#"><button class="round" purchase>3 -4</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button class="round" purchase>$90.00</button></a>
+                </div>
+
+                </div>
+                </div>
+
+<div class="buy-home">
+<div class="container">
+
+
+
+
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        <img class="gallery-image" src="${_imagesHeJpgDefault.default}" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+    </div>
+
+    <div class="gallery-item">
+        <img class="gallery-image" src="${_imagesHe2JpgDefault.default}" alt="sunset behind San Francisco city skyline">
+    </div>
+
+    <div class="gallery-item">
+        <img class="gallery-image" src="${_imagesHe3JpgDefault.default}" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+    </div>
+
+    <div class="gallery-item">
+        <img class="gallery-image" src="${_imagesHe4JpgDefault.default}" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+    </div>
+
+    <div class="gallery-item">
+        <img class="gallery-image" src="${_imagesHe5JpgDefault.default}" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+    </div>
+
+    <div class="gallery-item">
+        <img class="gallery-image" src="${_imagesHe6JpgDefault.default}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+`;

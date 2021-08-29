@@ -708,64 +708,75 @@ text-align: center;
 
 
 .news { box-sizing: border-box; font-family: Georgia, serif;
+
   background: #fff url(https://subtlepatterns.com/patterns/lightpaperfibers.png); }
 
 .news #container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
+
 }
 .news h1, h2 {
+
   font-family: 'Old Standard TT', serif;
 }
 .news h1 {
-  font-size: 5em;
+  font-size: 8em;
   font-weight: 700;
   text-align: center;
   margin: 0;
 }
 .news h2 {
-  font-size: 2em;
+  font-size:33em;
   font-style: italic;
 }
 .news header ul {
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid ;
+  border-bottom: 2px solid;
   padding: 0.5em 0;
   width: 100%;
 }
 .news header ul li {
+
   display: inline-block;
   list-style: none;
   width: 33%;
 }
 .news header ul li:first-child {
   font-size: 0.8em;
+
   text-indent: 1em;
 }
 .news header ul li:nth-child(2) {
   text-align: center;
+
   text-transform: uppercase;
   font-style: italic;
 }
 .news header ul li:last-child {
+
   text-align: right;
 }
 .news article h3 {
   display: inline;
+
 }
 .news article p {
   column-count: 4;
   text-align: justify;
+
 }
 .news article p span {
   display: block;
   text-align: center;
   font-weight: bold;
+
 }
 .news article p span span {
   display: inline;
   text-transform: uppercase;
+
 }
 .news article p cite {
   display: block;
@@ -776,6 +787,7 @@ text-align: center;
   font-weight: bold;
   font-size: 1.2em;
   text-align: left;
+
   line-height: 1.5em;
 }
 .news section#content:after {

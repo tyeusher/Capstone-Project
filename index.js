@@ -6,7 +6,15 @@ import dotenv from "dotenv";
 import axios from "axios";
 const router = new Navigo(window.location.origin);
 
+
+
+
+
+
+
 dotenv.config();
+
+
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -18,7 +26,12 @@ function render(st = state.Home) {
 
   router.updatePageLinks();
 }
+// addEventListeners(st);
+//data()
 
+// function data(){
+// fetch("https://afterearth-capstone.herokuapp.com/status").then(response => response.json)
+//   .then(data=>console.log(data))}
 
 
 router.hooks({//
@@ -56,14 +69,14 @@ router.hooks({//
 });
 
 
-function addEventListeners() {
-  // add menu toggle to bars icon in nav bar
-  document
-    .querySelector(".fa-bars")
-    .addEventListener("click", () =>
-      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-    );
-}
+// function addEventListeners() {
+//   // add menu toggle to bars icon in nav bar
+//   document
+//     .querySelector(".fa-bars")
+//     .addEventListener("click", () =>
+//       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+//     );
+// }
 
 
 router
@@ -76,15 +89,8 @@ router
 
 
 
-function er() {
-  alert("hfi")
-}
-
-let lo = document.getElementsByClassName('tester')
 
 
-lo.addEventListener('click', (){
 
-});
 
 

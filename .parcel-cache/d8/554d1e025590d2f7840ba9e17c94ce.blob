@@ -1,0 +1,15 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+exports.default = () => _htmlLiteralDefault.default`
+
+<form class="container" method="post" action="/">
+  <input>
+  <textarea></textarea>
+
+  <button></button>
+</form>
+
+
+`;

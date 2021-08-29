@@ -1,0 +1,21 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+exports.default = [{
+  title: "Home",
+  text: "Home"
+}, {
+  title: "BuyHomes",
+  text: "BuyHomes"
+}, {
+  title: "Restaurant",
+  text: "Restaurant"
+}, {
+  title: "Shopping",
+  text: "Shopping"
+}, {
+  title: "Favorites",
+  text: "Favorites"
+}, {
+  title: "News",
+  text: "News"
+}];

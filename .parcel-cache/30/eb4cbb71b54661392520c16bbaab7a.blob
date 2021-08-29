@@ -1,0 +1,18 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+exports.default = () => _htmlLiteralDefault.default`
+
+<form class="container" method="post" action="/">
+  <div class="former">
+<input class="$1"form-control>
+</div>
+<div class="former">
+  <textarea class="form-control"></textarea>
+  </div>
+  <button>add to mongodb</button>
+</form>
+
+
+`;

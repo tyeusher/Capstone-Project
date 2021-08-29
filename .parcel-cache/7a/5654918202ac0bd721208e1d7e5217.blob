@@ -1,0 +1,28 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+exports.default = links => _htmlLiteralDefault.default`
+<!-- passed in link -->
+<!-- we are mapping over the links in the links .js and putting each title and text -->
+
+<div class="top-nav">
+    <div class="title"><h1>after earth</h1></div>
+  <ul>
+
+  ${links.map(link => `<li><a href="/${link.title}"title="${link.title}" data-navigo><span>${link.text}</span></a></li>`)}
+
+  </ul>
+</div>
+
+
+<!-- <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"
+        >AFTER <span class="earth">EARTH</span></span>
+       <ul>
+       ${links.map(link => `<a href="/${link.title}" title="${link.title}" data-navigo><span>${link.text}</span></a>`)}
+       </ul>
+    </div>
+  </nav> -->
+`;

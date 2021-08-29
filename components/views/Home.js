@@ -11,13 +11,21 @@ const kelvinToFahrenheit = (kelvinTemp) =>
 
 
 
-export default (st) => html`
+  export default (st, links) => html`
 <div class="homeView">
   <div class="welcome">
     <h1>WELCOME TO AFTER EARTH</h1>
     <img src="${ufo}" class="logo"/>
   </div>
 
+
+<script>
+  let er = document.getElementById('btn').addEventListener('click', function(){console.log("sdjnf"))})
+
+</script>
+
+
+  <button id="btn">kmrkf</button>
 
   <h3 class="divider">Explore Mars</h3>
   <div class="wrapper">
@@ -67,4 +75,6 @@ export default (st) => html`
   ${kelvinToFahrenheit(st.weather.feelsLike)}F. Humidity is at
   ${st.weather.humidity}%, and the weather is ... ${st.weather.description}
 </h3>
+
+
 `;

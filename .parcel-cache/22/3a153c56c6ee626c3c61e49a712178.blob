@@ -1,0 +1,9 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _htmlLiteral = require("html-literal");
+var _htmlLiteralDefault = _parcelHelpers.interopDefault(_htmlLiteral);
+var _views = require("./views");
+exports.default = st => _htmlLiteralDefault.default`
+<!-- //we are exporting state -->
+  ${_views[st.view](st)}
+`;
