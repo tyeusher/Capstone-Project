@@ -31,6 +31,7 @@
     "express": "^4.17.1",
     "html-literal": "^1.1.0",
     "i": "^0.3.6",
+    "images": "^3.2.3",
     "lodash": "^4.17.21",
     "mongoose": "^6.0.2",
     "navigo": "^7.1.3",

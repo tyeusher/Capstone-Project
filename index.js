@@ -23,66 +23,43 @@ function render(st = state.Home) {
     ${Main(st)}
     ${Footer()}
     `;
-
-
-let homes =[
-  {
-      id: 8,
-      price: 1,
-      beds: 4,
-      bath: 2
-  },
-  {
-      id: 2,
-      price: 5,
-      beds: 7,
-      bath: 2
-  },
-{
-      id: 3,
-      price: 4,
-      beds: 6,
-      bath: 2
-  },
-
-  {
-      id: 4,
-      price: 4,
-      beds: 3,
-      bath: 1
-  },
-
-  {
-      id: 5,
-      price: 7,
-      beds: 6,
-      bath: 3
-  },
-
-  {
-      id: 6,
-      price: 4,
-      beds: 3,
-      bath: 2
-  }
-]
-
-
+  addEventListeners(st);
 
   router.updatePageLinks();
 }
 
+function addEventListeners(st) {
+  // add menu toggle to bars icon in nav bar
+  document
+    .querySelector(".fa-bars")
+    .addEventListener("click", () =>
+      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+    )};
+data()
+
+function data(){
+fetch("https://afterearth-capstone.herokuapp.com/status").then(response => response.json)
+  .then(data=>console.log(data))}
 
 
-// addEventListeners(st);
-//data()
+if(st.view === "Buyhomes"){
+  document.querySelector("form").addEventListener("submit", (event) => {
 
-// function data(){
-// fetch("https://afterearth-capstone.herokuapp.com/status").then(response => response.json)
-//   .then(data=>console.log(data))}
+    let homes = state.Buyhomes.homes;
+    homes.filter((home)=>{
+      if(home.price ===1 || home.price ===2 || home.price ===3){
+        home.price = state.Buyhomes.homesFiltered.price;
+        home.bed = state.Buyhomes.homesFiltered.bed;
+        // ro.innerHTML=`<h1>${home.id},${home.price}</h1>`
+        // console.log(home.picture)
 
+      }
+    })
+    event.preventDefault();
+  })
+}
 
-router.hooks({//
+router.hooks({
   before: (done, params) => {
     const page =
       params && params.hasOwnProperty("page")
@@ -117,47 +94,6 @@ router.hooks({//
 });
 
 
-function addEventListeners() {
-  // add menu toggle to bars icon in nav bar
-  document
-    .querySelector(".fa-bars")
-    .addEventListener("click", () =>
-      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-    );
-    if(st.view === 'Buyhomes'){
-
-      let filt = document.getElementById("homes-filter");
-      let oneThree = document.getElementById("oneThreePrice");
-      let imageOne = document.getElementsByClassName('gallery-image-one');
-      let imgs = document.getElementsByTagName('img');
-      let imgSrcs = [];
-      oneThree.addEventListener('click',(elem)=>{
-        for (var i = 0; i < imgs.length; i++) {//loop through all images
-          imgSrcs.push(imgs[i].src);//push a;ll images in array
-      }
-        // console.log(image);
-        for(let i =0; i<imgSrcs.length; i++){
-          console.log(imgSrcs[i])
-          filt.innerHTML+=`<img src="${imgSrcs[i]}" width ="200">`
-      }
-      homes.filter((home)=>{
-  if(home.price >= elem.target.dataset.minprice && home.price <= elem.target.dataset.maxprice){
-    let bed = home.beds;
-    let bath = home.bath;
-    let pric = home.price
-    filt.innerHTML=`
-
-    `
-  }
-})
-
-      })
-
-    }
-}
-
-
-
 
 router
   .on({
@@ -165,14 +101,3 @@ router
     ":page": (params) => render(state[capitalize(params.page)]),
   })
   .resolve();
-
-
-
-
-
-
-
-
-
-
-

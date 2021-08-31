@@ -1,35 +1,36 @@
 import html from "html-literal";
 
-import home1 from "../../images/he.jpg";
-import home2 from "../../images/he2.jpg";
-import home3 from "../../images/he3.jpg";
-import home4 from "../../images/he4.jpg";
-import home5 from "../../images/he5.jpg";
-import home6 from "../../images/he6.jpg";
-import home7 from "../../images/marsHome3.jpg";
+import home1 from "/images/he.jpg";
+import home2 from "/images/he2.jpg";
+import home3 from "/images/he3.jpg";
+import home4 from "/images/he4.jpg";
+import home5 from "/images/he5.jpg";
+import home6 from "/images/he6.jpg";
+import home7 from "/images/marsHome3.jpg";
 
-export default () => html`
-<div class="filtered-search">
-
-</div>
-
-
+export default (st) => html`
 
 <div class="home-holder">
     <div class="buy-home-title">
 <h1 class="heading">BUY HOMES<span></span></h1>
 </div>
 
-<div id="homes-filter">
+<b class="filtered">
+${st.Buyhomes.homes.map((home)=>{
+return finishFilter(home)
+})
+.join("")}
+</b>
+;
 
-</div>
+
 <div class="home-buttons">
-                <div class="homes-price">
-                <a href="#"><button id="oneThreePrice" class="round"  data-minprice="1" data-maxprice="3" purchase>100k - 300k</button></a>
-                <a href="#"><button id="fiveSevenPrice" class="round"  data-minprice="5" data-maxprice="7" purchase>$400k - 600k</button></a>
-                <a href="#"><button id="eightTenPrice" class="round"  data-minprice="8" data-maxprice="9" purchase>$90.00</button></a>
-                <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
-                </div>
+                <form class="homes-price">
+
+                <input type="submit" name="submit" value="1 - 3" />
+                <input type="submit" name="submit" value="4 - 6" />
+                <input type="submit" name="submit" value="7 - 8" />
+                </form>
 
                 <div class="homes-bed">
                 <a href="#"><button id="Price" class="round"  purchase>1 - 2</button></a>
@@ -46,15 +47,10 @@ export default () => html`
                 </div>
 
                 </div>
-                </div>
+
 
 <div class="buy-home">
 <div class="container">
-
-
-
-
-
 <div class="gallery">
 
     <div class="gallery-item">
@@ -80,11 +76,18 @@ export default () => html`
     <div class="gallery-item">
         <img class="gallery-image" src="${home6}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
     </div>
-
 </div>
-
-</div>
-
 </div>
 </div>
 `;
+
+function finishFilter(home){
+    return `
+    <div class="gallery-item">
+            <img class="gallery-image" src="${home.picture}" alt="">
+            <h2>Price:${home.price}</h2>
+            <h3>Bed:${home.bed}</h3>
+            <h3>Bath:${home.bath}</h3>
+        </div>;
+    `
+    }

@@ -11,7 +11,7 @@ const kelvinToFahrenheit = (kelvinTemp) =>
 
 
 
-  export default (st, links) => html`
+  export default (st) => html`
 <div class="homeView">
   <div class="welcome">
     <h1>WELCOME TO AFTER EARTH</h1>
@@ -19,10 +19,6 @@ const kelvinToFahrenheit = (kelvinTemp) =>
   </div>
 
 
-<script>
-  let er = document.getElementById('btn').addEventListener('click', function(){console.log("sdjnf"))})
-
-</script>
 
 
   <button id="btn">kmrkf</button>
