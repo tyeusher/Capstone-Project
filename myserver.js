@@ -1,13 +1,15 @@
 var express = require('express');
+import * as state from "./store";
 var app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const { setFlagsFromString } = require('v8');
 
+
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get('/', function(req, res){
-res.sendFile(__dirname + 'Favorites.js')
+res.send(homes)
 })
 
 app.listen(3000, function(){
@@ -15,6 +17,9 @@ app.listen(3000, function(){
 })
 
 mongoose.connect("mongodb+srv://tye:<D@Ub5144>@cluster0.llw73.mongodb.net/shoes", {useNewUrlParser:true}, {useUnifiedTopology:true} )
+
+
+
 
 const notesSchema ={
     title: String,

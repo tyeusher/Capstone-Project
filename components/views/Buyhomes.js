@@ -20,21 +20,22 @@ export default () => html`
 <h1 class="heading">BUY HOMES<span></span></h1>
 </div>
 
-<button class="tester">frf</button>
+<div id="homes-filter">
 
+</div>
 <div class="home-buttons">
                 <div class="homes-price">
-                <a href="#"><button class="round" purchase>100k - 300k</button></a>
-                <a href="#"><button class="round" purchase>$400k - 600k</button></a>
-                <a href="#"><button class="round" purchase>$90.00</button></a>
-                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button id="oneThreePrice" class="round"  data-minprice="1" data-maxprice="3" purchase>100k - 300k</button></a>
+                <a href="#"><button id="fiveSevenPrice" class="round"  data-minprice="5" data-maxprice="7" purchase>$400k - 600k</button></a>
+                <a href="#"><button id="eightTenPrice" class="round"  data-minprice="8" data-maxprice="9" purchase>$90.00</button></a>
+                <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
                 </div>
 
                 <div class="homes-bed">
-                <a href="#"><button class="round" purchase>1 - 2</button></a>
-                <a href="#"><button class="round" purchase>3 -4</button></a>
-                <a href="#"><button class="round" purchase>$90.00</button></a>
-                <a href="#"><button class="round" purchase>$90.00</button></a>
+                <a href="#"><button id="Price" class="round"  purchase>1 - 2</button></a>
+                <a href="#"><button id="Price" class="round" purchase>3 -4</button></a>
+                <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
+                <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
                 </div>
 
                 <div class="homes-bath">
@@ -57,23 +58,23 @@ export default () => html`
 <div class="gallery">
 
     <div class="gallery-item">
-        <img class="gallery-image" src="${home1}" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+        <img class="gallery-image gallery-image-one"  src="${home1}" data-minprice="1" data-maxprice="3" alt="">
     </div>
 
     <div class="gallery-item">
-        <img class="gallery-image" src="${home2}" alt="sunset behind San Francisco city skyline">
+        <img class="gallery-image" src="${home2}" alt="e">
     </div>
 
     <div class="gallery-item">
-        <img class="gallery-image" src="${home3}" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+        <img class="gallery-image" src="${home3}" alt="">
     </div>
 
     <div class="gallery-item">
-        <img class="gallery-image" src="${home4}" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+        <img class="gallery-image" src="${home4}" alt="">
     </div>
 
     <div class="gallery-item">
-        <img class="gallery-image" src="${home5}" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+        <img class="gallery-image" src="${home5}" alt="">
     </div>
 
     <div class="gallery-item">

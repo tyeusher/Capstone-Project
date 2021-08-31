@@ -30,10 +30,10 @@ const kelvinToFahrenheit = (kelvinTemp) =>
   <h3 class="divider">Explore Mars</h3>
   <div class="wrapper">
     <div class="eachButton">
-      <a href="#"><span>Buy Homes!</span></a>
-      <a href="#"><span>Restaurants!</span></a>
-      <a href="#"><span>Shopping</span></a>
-      <a href="#"><span>Shopping</span></a>
+      <a href="Home"><span>Buy Homes!</span></a>
+      <a href="Restaurant"><span>Restaurants!</span></a>
+      <a href="Shopping"><span>Shopping</span></a>
+      <a href="News"><span>Mars News</span></a>
     </div>
   </div>
 
