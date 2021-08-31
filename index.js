@@ -67,36 +67,7 @@ let homes =[
   }
 ]
 
-    if(st.view === 'Buyhomes'){
 
-      let filt = document.getElementById("homes-filter");
-      let oneThree = document.getElementById("oneThreePrice");
-      let imageOne = document.getElementsByClassName('gallery-image-one');
-      let imgs = document.getElementsByTagName('img');
-      let imgSrcs = [];
-      oneThree.addEventListener('click',(elem)=>{
-        for (var i = 0; i < imgs.length; i++) {//loop through all images
-          imgSrcs.push(imgs[i].src);//push a;ll images in array
-      }
-        // console.log(image);
-        for(let i =0; i<imgSrcs.length; i++){
-          console.log(imgSrcs[i])
-          filt.innerHTML+=`<img src="${imgSrcs[i]}" width ="200">`
-      }
-      homes.filter((home)=>{
-  if(home.price >= elem.target.dataset.minprice && home.price <= elem.target.dataset.maxprice){
-    let bed = home.beds;
-    let bath = home.bath;
-    let pric = home.price
-    filt.innerHTML=`
-
-    `
-  }
-})
-
-      })
-
-    }
 
   router.updatePageLinks();
 }
@@ -146,14 +117,44 @@ router.hooks({//
 });
 
 
-// function addEventListeners() {
-//   // add menu toggle to bars icon in nav bar
-//   document
-//     .querySelector(".fa-bars")
-//     .addEventListener("click", () =>
-//       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-//     );
-// }
+function addEventListeners() {
+  // add menu toggle to bars icon in nav bar
+  document
+    .querySelector(".fa-bars")
+    .addEventListener("click", () =>
+      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+    );
+    if(st.view === 'Buyhomes'){
+
+      let filt = document.getElementById("homes-filter");
+      let oneThree = document.getElementById("oneThreePrice");
+      let imageOne = document.getElementsByClassName('gallery-image-one');
+      let imgs = document.getElementsByTagName('img');
+      let imgSrcs = [];
+      oneThree.addEventListener('click',(elem)=>{
+        for (var i = 0; i < imgs.length; i++) {//loop through all images
+          imgSrcs.push(imgs[i].src);//push a;ll images in array
+      }
+        // console.log(image);
+        for(let i =0; i<imgSrcs.length; i++){
+          console.log(imgSrcs[i])
+          filt.innerHTML+=`<img src="${imgSrcs[i]}" width ="200">`
+      }
+      homes.filter((home)=>{
+  if(home.price >= elem.target.dataset.minprice && home.price <= elem.target.dataset.maxprice){
+    let bed = home.beds;
+    let bath = home.bath;
+    let pric = home.price
+    filt.innerHTML=`
+
+    `
+  }
+})
+
+      })
+
+    }
+}
 
 
 
