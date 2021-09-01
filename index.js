@@ -87,6 +87,18 @@ router.hooks({
           .catch((err) => console.log(err));
         break;
 
+        case "Buyhomes":
+          axios
+          .get("https://mars-after-earth.herokuapp.com/homes"
+          )
+          .then((response)=>{
+            console.log(response);
+          
+            done();
+          })
+          .catch((err) => console.log(err));
+          break;
+
       default:
         done();
     }
