@@ -88,11 +88,15 @@ router.hooks({
         break;
 
         case "Buyhomes":
-          axios
-          .get("https://mars-after-earth.herokuapp.com/"
+          state.Buyhomes.homes = [];
+        axios
+          .get("https://mars-after-earth.herokuapp.com/homes"
           )
           .then((response)=>{
-            console.log(response);
+            response.data.forEach((home)=>{
+                state.Buyhomes.homes.push(home);
+                console.log('list of homes', state.Buyhomes.homes);
+            });
           
             done();
           })
