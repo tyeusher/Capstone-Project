@@ -40,12 +40,26 @@ function addEventListeners(st) {
     document.querySelectorAll("#submitButtonOne").forEach(button => {
       button.addEventListener("click", event => {
         let filterHome = [];
-        filterHome += state.Buyhomes.homes;
-        console.log(filterHome);
+        console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.price <= 3){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
       });
     });
 
+    //start the new code
   }
+
+
+
     }
 
 

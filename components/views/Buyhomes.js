@@ -11,6 +11,8 @@ import home7 from "/images/marsHome3.jpg";
 export default (st) => html`
 
 
+<input id="submitButtonOne" type="button" value="buttonOne">
+
 ${st.homes.map((home)=>{
     return finishFilter(home);
 })
@@ -24,7 +26,7 @@ ${st.homes.map((home)=>{
              <h2>Price:${home.price}</h2>
              <h3>Bed:${home.bed}</h3>
              <h3>Bath:${home.bath}</h3>
-             <input id="submitButtoneOne" type="button" value="buttonOne">
+             
          </div>`;
 
  }
