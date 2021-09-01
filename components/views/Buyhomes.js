@@ -10,18 +10,30 @@ import home7 from "/images/marsHome3.jpg";
 
 export default (st) => html`
 
-<div class="home-holder">
+
+${st.Buyhomes.homes.map((home)=>{
+    return `<div class="gallery-item">
+          <img class="gallery-image" src="${home.picture}" alt="">
+        <h2>Price:${home.price}</h2>
+        <h3>Bed:${home.bed}</h3>
+        <h3>Bath:${home.bath}</h3>
+        </div>;`
+})}
+
+
+
+<!-- <div class="home-holder">
     <div class="buy-home-title">
 <h1 class="heading">BUY HOMES<span></span></h1>
-</div>
-
+</div> -->
+<!--
 <b class="filtered">
 ${st.Buyhomes.homes.map((home)=>{
 return finishFilter(home)
 })
 .join("")}
 </b>
-;
+; -->
 
 
 <div class="home-buttons">
@@ -81,13 +93,13 @@ return finishFilter(home)
 </div>
 `;
 
-function finishFilter(home){
-    return `
-    <div class="gallery-item">
-            <img class="gallery-image" src="${home.picture}" alt="">
-            <h2>Price:${home.price}</h2>
-            <h3>Bed:${home.bed}</h3>
-            <h3>Bath:${home.bath}</h3>
-        </div>;
-    `
-    }
+// function finishFilter(home){
+//     return `
+//     <div class="gallery-item">
+//             <img class="gallery-image" src="${home.picture}" alt="">
+//             <h2>Price:${home.price}</h2>
+//             <h3>Bed:${home.bed}</h3>
+//             <h3>Bath:${home.bath}</h3>
+//         </div>;
+//     `
+

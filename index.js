@@ -35,29 +35,29 @@ function addEventListeners(st) {
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     )};
-data()
+// data()
 
-function data(){
-fetch("https://afterearth-capstone.herokuapp.com/status").then(response => response.json)
-  .then(data=>console.log(data))}
+// function data(){
+// fetch("https://afterearth-capstone.herokuapp.com/status").then(response => response.json)
+//   .then(data=>console.log(data))}
 
 
-if(st.view === "Buyhomes"){
-  document.querySelector("form").addEventListener("submit", (event) => {
+// if(st.view === "Buyhomes"){
+//   document.querySelector("form").addEventListener("submit", (event) => {
 
-    let homes = state.Buyhomes.homes;
-    homes.filter((home)=>{
-      if(home.price ===1 || home.price ===2 || home.price ===3){
-        home.price = state.Buyhomes.homesFiltered.price;
-        home.bed = state.Buyhomes.homesFiltered.bed;
-        // ro.innerHTML=`<h1>${home.id},${home.price}</h1>`
-        // console.log(home.picture)
+//     let homes = state.Buyhomes.homes;
+//     homes.filter((home)=>{
+//       if(home.price ===1 || home.price ===2 || home.price ===3){
+//         home.price = state.Buyhomes.homesFiltered.price;
+//         home.bed = state.Buyhomes.homesFiltered.bed;
+//         // ro.innerHTML=`<h1>${home.id},${home.price}</h1>`
+//         // console.log(home.picture)
 
-      }
-    })
-    event.preventDefault();
-  })
-}
+//       }
+//     })
+//     event.preventDefault();
+//   })
+// }
 
 router.hooks({
   before: (done, params) => {
