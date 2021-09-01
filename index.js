@@ -33,8 +33,24 @@ function addEventListeners(st) {
   document
     .querySelector(".fa-bars")
     .addEventListener("click", () =>
-      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
-    )};
+      document.querySelector("nav > ul").classList.toggle("hidden--mobile") 
+      );
+    
+  if (st.view === "Buyhomes"){
+    document.querySelectorAll("#submitButtonOne").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        filterHome += state.Buyhomes.homes;
+        console.log(filterHome);
+      });
+    });
+
+  }
+    }
+
+
+
+
 // data()
 
 // function data(){

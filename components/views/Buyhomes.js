@@ -24,6 +24,7 @@ ${st.homes.map((home)=>{
              <h2>Price:${home.price}</h2>
              <h3>Bed:${home.bed}</h3>
              <h3>Bath:${home.bath}</h3>
+             <input id="submitButtoneOne" type="button" value="buttonOne">
          </div>`;
 
  }
