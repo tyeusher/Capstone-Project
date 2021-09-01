@@ -1,5 +1,51 @@
 const express = require("express");
 const app = express();
+const mongoose = require("mongoose");//
+const dotenv = require("dotenv")
+const bodyParser = require('body-parser');
+const { response } = require("express");
+// const homez = require ("./routers/homez")
+
+dotenv.config()//
+
+
+mongoose.connect(process.env.MONGODB);//
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'Connection error:'));//
+db.once('open', console.log.bind(console, 'Successfully opened connection to Mongo!'));//
+
+const logging = (request, response, next) => {//
+  console.log(`${request.method} ${request.url} ${Date.now()}`);//
+  next();//
+};//
+
+// CORS Middleware
+// ==============do this=====================8.2, 8.3 then host herpku
+const cors = (req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept,Authorization,Origin"
+  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  next();
+};
+// ===================do this=========================
+app.use(cors);
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json())
+app.use(express.json());
+app.use(logging);
+// app.use(homez);
+// =====================stop===========================
+
+
+
 
 
 
@@ -20,6 +66,8 @@ app.route("/").get((request, response) => {
 app.route("/homes").get((request, response)=>{
     response.send(JSON.stringify(homes))
 })
+
+
 
 
 let homes =[

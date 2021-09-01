@@ -89,7 +89,7 @@ router.hooks({
 
         case "Buyhomes":
           axios
-          .get("https://mars-after-earth.herokuapp.com/homes"
+          .get("https://mars-after-earth.herokuapp.com/"
           )
           .then((response)=>{
             console.log(response);
