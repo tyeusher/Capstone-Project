@@ -11,95 +11,77 @@ import home7 from "/images/marsHome3.jpg";
 export default (st) => html`
 
 
-${st.Buyhomes.homes.map((home)=>{
-    return `<div class="gallery-item">
-          <img class="gallery-image" src="${home.picture}" alt="">
-        <h2>Price:${home.price}</h2>
-        <h3>Bed:${home.bed}</h3>
-        <h3>Bath:${home.bath}</h3>
-        </div>;`
-})}
-
-
-
-<!-- <div class="home-holder">
-    <div class="buy-home-title">
-<h1 class="heading">BUY HOMES<span></span></h1>
-</div> -->
-<!--
-<b class="filtered">
-${st.Buyhomes.homes.map((home)=>{
-return finishFilter(home)
+${st.homes.map((home)=>{
+    return finishFilter(home);
 })
 .join("")}
-</b>
-; -->
-
-
-<div class="home-buttons">
-                <form class="homes-price">
-
-                <input type="submit" name="submit" value="1 - 3" />
-                <input type="submit" name="submit" value="4 - 6" />
-                <input type="submit" name="submit" value="7 - 8" />
-                </form>
-
-                <div class="homes-bed">
-                <a href="#"><button id="Price" class="round"  purchase>1 - 2</button></a>
-                <a href="#"><button id="Price" class="round" purchase>3 -4</button></a>
-                <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
-                <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
-                </div>
-
-                <div class="homes-bath">
-                <a href="#"><button class="round" purchase>1 - 2</button></a>
-                <a href="#"><button class="round" purchase>3 -4</button></a>
-                <a href="#"><button class="round" purchase>$90.00</button></a>
-                <a href="#"><button class="round" purchase>$90.00</button></a>
-                </div>
-
-                </div>
-
-
-<div class="buy-home">
-<div class="container">
-<div class="gallery">
-
-    <div class="gallery-item">
-        <img class="gallery-image gallery-image-one"  src="${home1}" data-minprice="1" data-maxprice="3" alt="">
-    </div>
-
-    <div class="gallery-item">
-        <img class="gallery-image" src="${home2}" alt="e">
-    </div>
-
-    <div class="gallery-item">
-        <img class="gallery-image" src="${home3}" alt="">
-    </div>
-
-    <div class="gallery-item">
-        <img class="gallery-image" src="${home4}" alt="">
-    </div>
-
-    <div class="gallery-item">
-        <img class="gallery-image" src="${home5}" alt="">
-    </div>
-
-    <div class="gallery-item">
-        <img class="gallery-image" src="${home6}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-    </div>
-</div>
-</div>
-</div>
 `;
 
-// function finishFilter(home){
-//     return `
-//     <div class="gallery-item">
-//             <img class="gallery-image" src="${home.picture}" alt="">
-//             <h2>Price:${home.price}</h2>
-//             <h3>Bed:${home.bed}</h3>
-//             <h3>Bath:${home.bath}</h3>
-//         </div>;
-//     `
+ function finishFilter(home){
+     return `
+    <div class="gallery-item">
+            <img class="gallery-image" src="${home.picture}" alt="">
+             <h2>Price:${home.price}</h2>
+             <h3>Bed:${home.bed}</h3>
+             <h3>Bath:${home.bath}</h3>
+         </div>`;
 
+ }
+
+
+// <div class="home-buttons">
+//                 <form class="homes-price">
+
+//                 <input type="submit" name="submit" value="1 - 3" />
+//                 <input type="submit" name="submit" value="4 - 6" />
+//                 <input type="submit" name="submit" value="7 - 8" />
+//                 </form>
+
+//                 <div class="homes-bed">
+//                 <a href="#"><button id="Price" class="round"  purchase>1 - 2</button></a>
+//                 <a href="#"><button id="Price" class="round" purchase>3 -4</button></a>
+//                 <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
+//                 <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
+//                 </div>
+
+//                 <div class="homes-bath">
+//                 <a href="#"><button class="round" purchase>1 - 2</button></a>
+//                 <a href="#"><button class="round" purchase>3 -4</button></a>
+//                 <a href="#"><button class="round" purchase>$90.00</button></a>
+//                 <a href="#"><button class="round" purchase>$90.00</button></a>
+//                 </div>
+
+//                 </div>
+
+
+// <div class="buy-home">
+// <div class="container">
+// <div class="gallery">
+
+//     <div class="gallery-item">
+//         <img class="gallery-image gallery-image-one"  src="${home1}" data-minprice="1" data-maxprice="3" alt="">
+//     </div>
+
+//     <div class="gallery-item">
+//         <img class="gallery-image" src="${home2}" alt="e">
+//     </div>
+
+//     <div class="gallery-item">
+//         <img class="gallery-image" src="${home3}" alt="">
+//     </div>
+
+//     <div class="gallery-item">
+//         <img class="gallery-image" src="${home4}" alt="">
+//     </div>
+
+//     <div class="gallery-item">
+//         <img class="gallery-image" src="${home5}" alt="">
+//     </div>
+
+//     <div class="gallery-item">
+//         <img class="gallery-image" src="${home6}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+//     </div>
+// </div>
+// </div>
+// </div>
+// `;
