@@ -7,7 +7,7 @@ const app = express();
 app
   .route("/")
   .get((request, response) => {
-    response.send(JSON.stringify({message: "No GET routeszc available on root URI." }), 404);
+    response.send(JSON.stringify({message: "No 4gGETfwf routeszc available on root URI." }), 404);
   })
 // .catch(err => console.log(err));
 const port = process.env.PORT || 4040;
