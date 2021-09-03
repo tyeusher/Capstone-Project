@@ -12,19 +12,31 @@ export default (st) => html`
 
 
 <input id="submitButtonOne" type="button" value="buttonOne">
+<input id="submitButtonFour" type="button" value="buttonFour">
+<input id="submitButtonSeven" type="button" value="buttonSeven">
 
+<input id="ButtonBedOne" type="button" value="BedOne">
+<input id="ButtonBedFour" type="button" value="BedFour">
+<input id="ButtonBedSeven" type="button" value="BedSeven">
+
+<input id="ButtonBathOne" type="button" value="BathOne">
+<input id="ButtonBathThree" type="button" value="BathThree">
+
+<section id = "filtereds">
 ${st.homes.map((home)=>{
+   
     return finishFilter(home);
 })
 .join("")}
+</section>
 `;
 
  function finishFilter(home){
      return `
     <div class="gallery-item">
-            <img class="gallery-image" src="${home.picture}" alt="">
+            // <img class="gallery-image" src="${home.picture}" alt="">
              <h2>Price:${home.price}</h2>
-             <h3>Bed:${home.bed}</h3>
+             <h3>Bed:${home.beds}</h3>
              <h3>Bath:${home.bath}</h3>
              
          </div>`;

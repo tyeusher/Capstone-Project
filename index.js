@@ -55,7 +55,138 @@ function addEventListeners(st) {
       });
     });
 
-    //start the new code
+    document.querySelectorAll("#submitButtonFour").forEach(button => {
+  
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        // console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.price >= 4 && home.price <=6){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+    document.querySelectorAll("#submitButtonSeven").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.price > 6){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+    document.querySelectorAll("#ButtonBedOne").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        // console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+        for(let home of state.Buyhomes.homes){
+            if(home.beds <= 3){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+    document.querySelectorAll("#ButtonBedFour").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.beds > 3 && home.beds <= 6){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+    
+    document.querySelectorAll("#ButtonBedSeven").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.beds > 6){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+    document.querySelectorAll("#ButtonBathOne").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        // console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.bath <= 2){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+    
+    document.querySelectorAll("#ButtonBathThree").forEach(button => {
+      button.addEventListener("click", event => {
+        let filterHome = [];
+        // console.log(state.Buyhomes.homes.price);
+        // filterHome += state.Buyhomes.homes;
+        // console.log(filterHome);
+          for(let home of state.Buyhomes.homes){
+            if(home.bath > 2){
+              filterHome.push(home);
+            }
+          }
+          console.log(filterHome);
+        // if (state.Buyhomes.homes.price >= 3 ){
+        //   filterHome.push(state.Buyhomes.homes.id);
+        // }
+      });
+    });
+
+
+
+    //to map
   }
 
 
