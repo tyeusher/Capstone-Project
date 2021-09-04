@@ -28,8 +28,8 @@ export default (st) => html`
 <section id = "filtereds">
 
 <section id="len">
-${st.firstHome.map((firstFilter)=>{
-   return filterHome(firstFilter)
+${st.filterOne.map((firstFilter)=>{
+   return firstHome(firstFilter)
 })
 .join("")}
 </section>
@@ -38,15 +38,12 @@ ${st.firstHome.map((firstFilter)=>{
 
     
 
- </section>
- `; 
-
+</section>
+`;
 // ${st.homes.map((home)=>{
-//     return firstHome(home);
-//      })
-//      .join("")}
-
-
+//     return finishFilter(home);
+// })
+// .join("")}
  function finishFilter(home){
      return `
      <div class="buy-homes">
@@ -70,6 +67,7 @@ ${st.firstHome.map((firstFilter)=>{
 <div class="containers">
 <div class="galleries">
    <div class="gallery-item">
+            
             <h2>Price:${firstFilter.price}</h2>
             <h3>Bed:${firstFilter.beds}</h3>
             <h3>Bath:${firstFilter.bath}</h3>
