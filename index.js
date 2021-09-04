@@ -42,10 +42,11 @@ function addEventListeners(st) {
         const filterOne = [];
           for(let home of state.Buyhomes.homes){
             if(home.price <= 3){
-              state.Buyhomes.filterOne.push(home);
+              filterOne.push(home);
             }
           }
-         console.log(state.Buyhomes.filterOne)
+        //  console.log(state.Buyhomes.filterOne)
+        // console.log(filterOne)
       });
     });
 

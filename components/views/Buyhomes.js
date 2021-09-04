@@ -28,8 +28,8 @@ export default (st) => html`
 <section id = "filtereds">
 
 <section id="len">
-${st.filterOne.map((home)=>{
-   console.log('h');
+${st.firstHome.map((firstFilter)=>{
+   return filterHome(firstFilter)
 })
 .join("")}
 </section>
@@ -37,12 +37,15 @@ ${st.filterOne.map((home)=>{
 
 
     
-${st.homes.map((home)=>{
-    return finishFilter(home);
-})
-.join("")}
-</section>
-`;
+
+ </section>
+ `; 
+
+// ${st.homes.map((home)=>{
+//     return firstHome(home);
+//      })
+//      .join("")}
+
 
  function finishFilter(home){
      return `
@@ -50,7 +53,7 @@ ${st.homes.map((home)=>{
 <div class="containers">
 <div class="galleries">
     <div class="gallery-item">
-            // <img class="gallery-image" src="${home.picture}" alt="">
+            
              <h2>Price:${home.price}</h2>
              <h3>Bed:${home.beds}</h3>
              <h3>Bath:${home.bath}</h3>
@@ -60,6 +63,23 @@ ${st.homes.map((home)=>{
          </div>`;
 
  }
+
+ function firstHome(firstFilter){
+    return `
+    <div class="buy-homes">
+<div class="containers">
+<div class="galleries">
+   <div class="gallery-item">
+            <h2>Price:${firstFilter.price}</h2>
+            <h3>Bed:${firstFilter.beds}</h3>
+            <h3>Bath:${firstFilter.bath}</h3>
+            </div>
+            </div>
+            </div>
+        </div>`;
+
+}
+//<img class="gallery-image" src="${home.picture}" alt="">
 
 
 
