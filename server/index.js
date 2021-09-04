@@ -68,8 +68,8 @@ app.route("/homes").get((request, response)=>{
     response.send(JSON.stringify(homes))
 })
 
-app.route("/shopItem").get((request, response)=>{
-  response.send(JSON.stringify(shopItems))
+app.route("/shopping").get((request, response)=>{
+  response.send(JSON.stringify(shoppingItems))
 })
 
 
