@@ -22,9 +22,22 @@ export default (st) => html`
 <input id="ButtonBathOne" type="button" value="BathOne">
 <input id="ButtonBathThree" type="button" value="BathThree">
 
+
+
+
 <section id = "filtereds">
+
+<section id="len">
+${st.filterOne.map((home)=>{
+   console.log('h');
+})
+.join("")}
+</section>
+
+
+
+    
 ${st.homes.map((home)=>{
-   
     return finishFilter(home);
 })
 .join("")}
@@ -33,17 +46,44 @@ ${st.homes.map((home)=>{
 
  function finishFilter(home){
      return `
+     <div class="buy-homes">
+<div class="containers">
+<div class="galleries">
     <div class="gallery-item">
             // <img class="gallery-image" src="${home.picture}" alt="">
              <h2>Price:${home.price}</h2>
              <h3>Bed:${home.beds}</h3>
              <h3>Bath:${home.bath}</h3>
-             
+             </div>
+             </div>
+             </div>
          </div>`;
 
  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 // <div class="home-buttons">
 //                 <form class="homes-price">
 

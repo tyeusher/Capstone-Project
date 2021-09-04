@@ -39,150 +39,116 @@ function addEventListeners(st) {
   if (st.view === "Buyhomes"){
     document.querySelectorAll("#submitButtonOne").forEach(button => {
       button.addEventListener("click", event => {
-        let filterHome = [];
-        console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
+        const filterOne = [];
           for(let home of state.Buyhomes.homes){
             if(home.price <= 3){
-              filterHome.push(home);
+              state.Buyhomes.filterOne.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
+         console.log(state.Buyhomes.filterOne)
       });
     });
 
     document.querySelectorAll("#submitButtonFour").forEach(button => {
   
       button.addEventListener("click", event => {
-        let filterHome = [];
-        // console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
+       const filterFour = [];
           for(let home of state.Buyhomes.homes){
             if(home.price >= 4 && home.price <=6){
-              filterHome.push(home);
+              filterFour.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
+          console.log(filterFour)
+       
       });
     });
 
     document.querySelectorAll("#submitButtonSeven").forEach(button => {
       button.addEventListener("click", event => {
-        let filterHome = [];
-        console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
+        const filterSeven= [];
           for(let home of state.Buyhomes.homes){
             if(home.price > 6){
-              filterHome.push(home);
+              filterSeven.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
       });
     });
 
     document.querySelectorAll("#ButtonBedOne").forEach(button => {
       button.addEventListener("click", event => {
-        let filterHome = [];
-        // console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
+        let bedFilterOne = [];
         for(let home of state.Buyhomes.homes){
             if(home.beds <= 3){
-              filterHome.push(home);
+              bedFilterOne.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
       });
     });
 
     document.querySelectorAll("#ButtonBedFour").forEach(button => {
       button.addEventListener("click", event => {
-        let filterHome = [];
-        console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
+        const butbedFour = [];
           for(let home of state.Buyhomes.homes){
             if(home.beds > 3 && home.beds <= 6){
               filterHome.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
       });
     });
 
     
     document.querySelectorAll("#ButtonBedSeven").forEach(button => {
       button.addEventListener("click", event => {
-        let filterHome = [];
-        console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
+        const butBedSeven = [];
           for(let home of state.Buyhomes.homes){
             if(home.beds > 6){
-              filterHome.push(home);
+              butBedSeven.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
+          
       });
     });
 
     document.querySelectorAll("#ButtonBathOne").forEach(button => {
       button.addEventListener("click", event => {
-        let filterHome = [];
+        let butBathOne = [];
         // console.log(state.Buyhomes.homes.price);
         // filterHome += state.Buyhomes.homes;
         // console.log(filterHome);
           for(let home of state.Buyhomes.homes){
             if(home.bath <= 2){
-              filterHome.push(home);
+              butBathOne.push(home);
             }
           }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
       });
     });
 
     
-    document.querySelectorAll("#ButtonBathThree").forEach(button => {
-      button.addEventListener("click", event => {
-        let filterHome = [];
-        // console.log(state.Buyhomes.homes.price);
-        // filterHome += state.Buyhomes.homes;
-        // console.log(filterHome);
-          for(let home of state.Buyhomes.homes){
-            if(home.bath > 2){
-              filterHome.push(home);
-            }
-          }
-          console.log(filterHome);
-        // if (state.Buyhomes.homes.price >= 3 ){
-        //   filterHome.push(state.Buyhomes.homes.id);
-        // }
-      });
-    });
+    // document.querySelectorAll("#buttonBathThree").forEach(button => {
+    //   button.addEventListener("click", event => {
+    //     let filterHome = [];
+    //     // console.log(state.Buyhomes.homes.price);
+    //     // filterHome += state.Buyhomes.homes;
+    //     // console.log(filterHome);
+    //       for(let home of state.Buyhomes.homes){
+    //         if(home.bath > 2){
+    //           filterHome.push(home);
+    //         }
+    //       }
+    //       console.log(filterHome);
+    //     // if (state.Buyhomes.homes.price >= 3 ){
+    //     //   filterHome.push(state.Buyhomes.homes.id);
+    //     // }
+    //   });
+    // });
+
+
+
+
+
+
+
+
 
 
 
@@ -258,11 +224,14 @@ router.hooks({
                 state.Buyhomes.homes.push(home);
                 console.log('list of homes', state.Buyhomes.homes);
             });
+
           
             done();
           })
           .catch((err) => console.log(err));
           break;
+
+
 
       default:
         done();

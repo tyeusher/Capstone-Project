@@ -2,6 +2,13 @@ export default {
   header: "", //this is what it will say as the header or front of page,
   view: "Buyhomes",
   homes: [],
+  filterOne: [],
+  filterFour: [],
+  filterSeven: [],
+  bedFilterOne: [],
+  butBedFour: [],
+  butBedSeven: [],
+  butBathOne: []
 
 };
 
