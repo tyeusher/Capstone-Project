@@ -25,41 +25,39 @@ export default (st) => html`
 
 
 
-<section id = "filtereds">
+<div id = "filtereds">
 
-<section id="len">
+<div class="filterOne">
 ${st.filterOne.map((firstFilter)=>{
-   return firstHome(firstFilter)
+    return firstHome(firstFilter);
 })
-.join("")}
-</section>
+.join("")
+
+}
+</div>
+<div class="filterFour">
+
+${st.filterFour.map((firstFilter)=>{
+    return firstHome(firstFilter);
+}).join("")
+}</div>
+
+<div class="filterSeven">
+
+${st.filterSeven.map((firstFilter)=>{
+    return firstHome(firstFilter);
+}).join("")
 
 
 
-    
+}
+
+</div>
+
 
 </section>
 `;
-// ${st.homes.map((home)=>{
-//     return finishFilter(home);
-// })
-// .join("")}
- function finishFilter(home){
-     return `
-     <div class="buy-homes">
-<div class="containers">
-<div class="galleries">
-    <div class="gallery-item">
-            
-             <h2>Price:${home.price}</h2>
-             <h3>Bed:${home.beds}</h3>
-             <h3>Bath:${home.bath}</h3>
-             </div>
-             </div>
-             </div>
-         </div>`;
 
- }
 
  function firstHome(firstFilter){
     return `

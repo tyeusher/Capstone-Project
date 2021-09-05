@@ -805,3 +805,9 @@ text-align: center;
   width: 100px;
   margin: auto;
 }
+
+
+
+.toggleOff {
+  display: none !important;
+}
