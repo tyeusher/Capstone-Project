@@ -79,6 +79,7 @@ let homes= [
       price: 1,
       beds: 4,
       bath: 2
+      pic: "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
   },
   {
       id: 2,

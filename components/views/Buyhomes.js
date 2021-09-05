@@ -8,6 +8,7 @@ import home5 from "/images/he5.jpg";
 import home6 from "/images/he6.jpg";
 import home7 from "/images/marsHome3.jpg";
 
+
 export default (st) => html`
 
 
@@ -29,7 +30,7 @@ export default (st) => html`
 
 <div class="filterOne">
 ${st.filterOne.map((firstFilter)=>{
-    return firstHome(firstFilter);
+    return firstHome(firstFilter)
 })
 .join("")
 
@@ -65,7 +66,7 @@ ${st.filterSeven.map((firstFilter)=>{
 <div class="containers">
 <div class="galleries">
    <div class="gallery-item">
-            
+   <img class="gallery-image" src="${home.picture}" alt="">
             <h2>Price:${firstFilter.price}</h2>
             <h3>Bed:${firstFilter.beds}</h3>
             <h3>Bath:${firstFilter.bath}</h3>

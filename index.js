@@ -42,8 +42,8 @@ function addEventListeners(st) {
 if (st.view === "Buyhomes") {
   document.querySelectorAll("#submitButtonOne").forEach(button => {
     button.addEventListener("click", () => {
+    
       document.querySelector(".filterOne").classList.toggle("toggleOff");
-      console.log("I was clicked");
     });
   });
 
@@ -105,10 +105,11 @@ case "Buyhomes":
       response.data.forEach(home => {
         state.Buyhomes.homes.push(home);
         // console.log("list of homes", state.Buyhomes.homes);
-        console.log(state.Buyhomes.filterFour);
+        // console.log(state.Buyhomes.filterFour);
       });
       state.Buyhomes.filterOne = state.Buyhomes.homes.filter(
         home => home.price <= 3
+        
       );
       state.Buyhomes.filterFour = state.Buyhomes.homes.filter(
         home => home.price >= 4 && home.price <= 6
