@@ -79,42 +79,46 @@ let homes= [
       price: 1,
       beds: 4,
       bath: 2,
-      pic: "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
+      pic: "https://m.media-amazon.com/images/I/91ergFzlDBL._SL1500_.jpg"
   },
   {
       id: 2,
       price: 5,
       beds: 7,
       bath: 2,
-      pic: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+      pic: "https://www.portrait-gift.com/wp-content/uploads/2018/06/sweet-home-pencil-sketch.jpg"
   },
 {
       id: 3,
 
       price: 4,
       beds: 6,
-      bath: 2
+      bath: 2,
+      pic: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/louisiana-house-portrait-sketch-hanne-lore-koehler.jpg"
   },
 
   {
       id: 4,
       price: 4,
       beds: 3,
-      bath: 1
+      bath: 1,
+      pic: "https://live.staticflickr.com/7254/6861904140_e670023b06.jpg"
   },
 
   {
       id: 5,
       price: 7,
       beds: 6,
-      bath: 3
+      bath: 3,
+      pic: "https://i.pinimg.com/originals/2d/57/c3/2d57c3d87d137914115582a15c4e9be6.jpg"
   },
 
   {
       id: 6,
       price: 4,
       beds: 3,
-      bath: 2
+      bath: 2,
+      pic: "https://i.etsystatic.com/6620142/r/il/ec583b/346222713/il_570xN.346222713.jpg"
   }
 ]
 
