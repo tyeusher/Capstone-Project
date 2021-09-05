@@ -66,7 +66,7 @@ ${st.filterSeven.map((firstFilter)=>{
 <div class="containers">
 <div class="galleries">
    <div class="gallery-item">
-   <img class="gallery-image" src="${home.picture}" alt="">
+   <img class="gallery-image" src="${firstFilter.pic}" alt="">
             <h2>Price:${firstFilter.price}</h2>
             <h3>Bed:${firstFilter.beds}</h3>
             <h3>Bath:${firstFilter.bath}</h3>

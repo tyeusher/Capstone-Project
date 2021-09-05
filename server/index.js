@@ -85,7 +85,8 @@ let homes= [
       id: 2,
       price: 5,
       beds: 7,
-      bath: 2
+      bath: 2,
+      pic: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
   },
 {
       id: 3,
