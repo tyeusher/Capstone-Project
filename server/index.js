@@ -79,14 +79,14 @@ let homes= [
       price: 1,
       beds: 4,
       bath: 2,
-      pic: "https://m.media-amazon.com/images/I/91ergFzlDBL._SL1500_.jpg"
+      pic: "https://i.pinimg.com/originals/e4/62/0b/e4620bd5ae19f5f5fca38a49e7c631cf.jpg"
   },
   {
       id: 2,
       price: 5,
       beds: 7,
       bath: 2,
-      pic: "https://www.portrait-gift.com/wp-content/uploads/2018/06/sweet-home-pencil-sketch.jpg"
+      pic: "https://lh6.googleusercontent.com/proxy/VoAkw261q6erdNojOsuB1WAW-HNXbma22ChRRtu6pqFvxHm3KgIn2AfQZeDlAmYE1k_Xi2k0jwujR8TzxUlYPoFQEIj3xY1GpUtAkax4vTZTOWpceEKxRHyZVYH_FmiDIPcXxt-tx5X5GFZb=s0-d"
   },
 {
       id: 3,
@@ -110,7 +110,7 @@ let homes= [
       price: 7,
       beds: 6,
       bath: 3,
-      pic: "https://i.pinimg.com/originals/2d/57/c3/2d57c3d87d137914115582a15c4e9be6.jpg"
+      pic: "https://c665576.ssl.cf2.rackcdn.com/051S/051S-0049/051S-0049-front-main-8.jpg"
   },
 
   {
@@ -118,7 +118,7 @@ let homes= [
       price: 4,
       beds: 3,
       bath: 2,
-      pic: "https://i.etsystatic.com/6620142/r/il/ec583b/346222713/il_570xN.346222713.jpg"
+      pic: "https://i.pinimg.com/originals/0b/fa/4a/0bfa4ab028465c64c20f87d16d9f21ff.jpg"
   }
 ]
 
