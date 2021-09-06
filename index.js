@@ -36,8 +36,9 @@ function addEventListeners(st) {
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile") 
       );
+
+
     
-   
   // index.js
 if (st.view === "Buyhomes") {
   document.querySelectorAll("#submitButtonOne").forEach(button => {
@@ -60,7 +61,28 @@ if (st.view === "Buyhomes") {
       console.log("I was clicked");
     });
   });
-}}
+}else{
+  if(st.view === "Restaurant"){
+    state.Restaurant.finalPrice = [];
+    let judahPrice = document.getElementById("button-two")
+    judahPrice.addEventListener("click", ()=>{
+      state.Restaurant.finalPrice.push(parseInt(judahPrice.dataset.judah))
+      console.log(judahPrice.dataset.judah)
+
+      })
+    //   let winePrice = document.getElementById("button-one");
+    //   winePrice.addEventListener("click", ()=>{
+    //     state.Restaurant.finalPrice.push(winePrice.dataset.wine)
+    //     console.log(winePrice.dataset.wine)
+    // });
+  }
+}
+
+
+
+
+}
+
 
 
 

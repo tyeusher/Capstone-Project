@@ -1,4 +1,5 @@
 export default {
   header: "",
-  view: "Restaurant"
+  view: "Restaurant",
+  finalPrice:[]
 };

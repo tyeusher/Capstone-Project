@@ -3,9 +3,7 @@
 
 }
 
-.nav-bar{
-  color:red;
-}
+
 
 .top-nav{
  position: fixed;
@@ -16,6 +14,7 @@
  justify-content: space-between;
  align-items: center;
  transform: 0.6s;
+ 
 
 
 }
@@ -215,18 +214,36 @@ font-weight: bold;
   width: 250px;
 }
 
+.price-grid{
+  font-size: 50px;
+  font-weight: bold;
+}
 
-
-
-
-
-.contain {
+.home-grid{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-family: 'Zen Loop', cursive;
+  justify-content: space-evenly;
+  
+}
+
+
+.budden{
+  border-radius: 20px;
+  height: 50px;
+  margin: 1em;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contain {
+  margin-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 
@@ -239,6 +256,7 @@ font-weight: bold;
   /* border-radius: 50px;
   */
 }
+
 
 #home-item h2{
   font-family: 'Zen Loop', cursive;
@@ -658,7 +676,7 @@ text-align: center;
 }
 
 /*Button Two*/
-.rest-view .button-two {
+.rest-view #button-two {
   border-radius: 4px;
   background-color:#d35400;
   border: none;
@@ -668,14 +686,14 @@ text-align: center;
 }
 
 
-.rest-view .button-two span {
+.rest-view #button-two span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.rest-view .button-two span:after {
+.rest-view #button-two span:after {
   content: '»';
   position: absolute;
 
@@ -684,11 +702,11 @@ text-align: center;
   transition: 0.5s;
 }
 
-.rest-view .button-two:hover span {
+.rest-view #button-two:hover span {
   padding-right: 25px;
 }
 
-.rest-view .button-two:hover span:after {
+.rest-view #button-two:hover span:after {
 
   right: 0;
 }
@@ -788,11 +806,6 @@ text-align: center;
   margin-bottom: 1em;
 }
 
-#submitButtonOne {
-  height: 23px;
-  width: 100px;
-  margin: auto;
-}
 
 
 

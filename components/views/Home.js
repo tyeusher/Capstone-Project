@@ -1,8 +1,8 @@
 import html from "html-literal";
-import mike from "../../images/mikejack.jpg";
+import mike from "../../images/michael.jpg";
 import ufo from "../../images/ufo.jpg";
-import dragon from "../../images/dragonfly.jpg";
-import joker from "../../images/realjoker.jpg";
+import dragon from "../../images/neo.jpg";
+import joker from "../../images/joker.png";
 
 
 const kelvinToFahrenheit = (kelvinTemp) =>
@@ -37,10 +37,10 @@ const kelvinToFahrenheit = (kelvinTemp) =>
 
   <div class="wrap">
     <div class="card">
-      <img src="${mike}" width="250px"/>
+      <img src="${mike}" width="175px"/>
       <div class= "container">
         <h2>Michael Jackson</h2>
-        <p>"Being on Mars, you just cant BEAT IT!</p>
+        <p>"BEING ON MARS, YOU JUST CANT BEAT IT!</p>
       </div>
     </div>
 
@@ -48,14 +48,14 @@ const kelvinToFahrenheit = (kelvinTemp) =>
       <img src="${joker}" width="250px"/>
       <div class="container">
         <h2>Joker</h2>
-        <p>Lets turn this place into a Gotham!</p>
+        <p>LETS TURN THIS PLACE INTO A GOTHAM!</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="${dragon}" width="250px" />
-      <h2>"Dragon Fly Jones</h2>
-      <p>" I love it here so far at mars, its nothing but SILENCE!SILENCE!!.</p>
+      <img src="${dragon}" width="270px" />
+      <h2>NEO</h2>
+      <p>"I THINK I LOVE THIS PLACE MORE THAN TRINITY</p>
       </div>
     </div>
     <h3 class="divider">About Mars</h3>

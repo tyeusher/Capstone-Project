@@ -10,23 +10,24 @@ import home7 from "/images/marsHome3.jpg";
 
 
 export default (st) => html`
+<div class="buy-home">
 <div class="home-grid">
-<div class="price-grid">
-<input id="submitButtonOne" type="button" value="PRICE: 100K - 300K">
-<input id="submitButtonFour" type="button" value="PRICE: 400K - 600K">
-<input id="submitButtonSeven" type="button" value="PRICE: 700K AND UP">
+<div class="price-grid"> 
+<input id="submitButtonOne" class="budden" type="button" value="PRICE: 100K - 300K">
+<input id="submitButtonFour" class="budden" type="button" value="PRICE: 400K - 600K">
+<input id="submitButtonSeven" class="budden" type="button" value="PRICE: 700K AND UP">
 </div>
 <div class="beds-grid">
-<input id="ButtonBedOne" type="button" value="BEDS: 1 - 3">
-<input id="ButtonBedFour" type="button" value="BEDS: 4 - 6">
-<input id="ButtonBedSeven" type="button" value="BEDS: 7 AND UP">
+<input id="ButtonBedOne" class="budden" type="button" value="BEDS: 1 - 3">
+<input id="ButtonBedFour" class="budden" type="button" value="BEDS: 4 - 6">
+<input id="ButtonBedSeven" class="budden" type="button" value="BEDS: 7 AND UP">
 </div>
 <div class="baths-grid">
-<input id="ButtonBathOne" type="button" value="BATH: 1 - 2">
-<input id="ButtonBathThree" type="button" value="BATH: 3 AND UP">
+<input id="ButtonBathOne" class="budden" type="button" value="BATH: 1 - 2">
+<input id="ButtonBathThree" class="budden" type="button" value="BATH: 3 AND UP">
 </div>
 
-
+</div>
 
 <div id = "filtereds">
 
@@ -51,14 +52,12 @@ ${st.filterSeven.map((firstFilter)=>{
     return firstHome(firstFilter);
 }).join("")
 
-
-
 }
 
 </div>
 
 
-</section>
+</div>
 `;
 
 
@@ -79,7 +78,11 @@ ${st.filterSeven.map((firstFilter)=>{
             </div>
             
         </div>
+        
+       
+       
         `;
+       
 
 }
 

@@ -4,8 +4,7 @@ import art from "../../images/art2.jpg";
 import food1 from "../../images/locust.jpg";
 import food2 from "../../images/break.jpg";
 import back from "../../images/lord.jpg";
-export default () => html
-`
+export default (st) => html`
 <div class="rest-view">
 
 <div class="jus">
@@ -97,7 +96,7 @@ export default () => html
   <div class="dee">
   <p class="detail-title">WATER INTO WINE</p>
   <p class="detail-price">20 SHECKELS</p>
-  <button class="button-two"><span>Hover Me</span></button>
+  <button id="button-one" data-wine="20"><span>Hover Me</span></button>
 </div>
 
 </div>
@@ -126,7 +125,7 @@ export default () => html
 
 <div class="second-pic">
   <div class="dee2">
-  <button class="button-two"><span>Hover Me</span></button>
+  <button id="button-two" data-judah="35"><span>Hover Me</span></button>
   <p class="detail-title">Judas's Special</p>
   <p class="detail-price">35 SHECKELS</p>
 </div>
@@ -200,7 +199,15 @@ export default () => html
 
 </div>
 
+<div>
+${st.finalPrice.map((firstFilter)=>{
+   console.log(firstFilter)
+}).join("")
 
+
+
+} 
+</div>
 
 
 `;

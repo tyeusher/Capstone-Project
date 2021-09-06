@@ -4,7 +4,7 @@ export default (links) => html`
 <!-- passed in link -->
 <!-- we are mapping over the links in the links .js and putting each title and text -->
 
-<nav>
+<nav class="top-nav">
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
       ${links.map(
