@@ -216,76 +216,64 @@ font-weight: bold;
 }
 
 
-/*
 
-All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77).
 
-The 'supports' rule will only run if your browser supports CSS grid.
 
-Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
 
-*/
-
-:root {
-	/* Base font size */
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Zen Loop', cursive;
 }
 
 
 
-.buy-home .container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+#home-item{
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+  /* background-color: silver;
+  opacity: 0.9; */
+  /* border-radius: 50px;
+  */
 }
 
-.buy-home .heading {
-font-family: "Montserrat", Arial, sans-serif;
-font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
+#home-item h2{
+  font-family: 'Zen Loop', cursive;
+  letter-spacing: 0.10em;
+}
+#home-item h3{
+  font-family: 'Zen Loop', cursive;
 }
 
-.buy-home .heading span {
-	display: block;
-}
 
-.buy-home .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
-}
-
-.buy-home .gallery-item {
+.gal-item {
 	/* Minimum width of 24rem and grow to fit available space */
 	flex: 1 0 24rem;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
+  font-family: 'Zen Loop', cursive;
 }
 
-.buy-home .gallery-image {
+.gal-image {
 	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+
+	height: 250px; 
 	transition: transform 400ms ease-out;
+  object-fit: cover;
+  margin-bottom: 3em;
+  
 }
 
-.buy-home .gallery-image:hover {
+.gal-image:hover {
 	transform: scale(1.15);
 }
+
+
 
 /*
 
@@ -296,7 +284,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 */
 
 
-  /* ignore the code below */
+
 
 
   .link-area
@@ -315,7 +303,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     font-size:25px;
   }
 
-  /* ============ */
+
 
 
 
@@ -811,3 +799,4 @@ text-align: center;
 .toggleOff {
   display: none !important;
 }
+

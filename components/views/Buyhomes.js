@@ -10,19 +10,21 @@ import home7 from "/images/marsHome3.jpg";
 
 
 export default (st) => html`
-
-
-<input id="submitButtonOne" type="button" value="buttonOne">
-<input id="submitButtonFour" type="button" value="buttonFour">
-<input id="submitButtonSeven" type="button" value="buttonSeven">
-
-<input id="ButtonBedOne" type="button" value="BedOne">
-<input id="ButtonBedFour" type="button" value="BedFour">
-<input id="ButtonBedSeven" type="button" value="BedSeven">
-
-<input id="ButtonBathOne" type="button" value="BathOne">
-<input id="ButtonBathThree" type="button" value="BathThree">
-
+<div class="home-grid">
+<div class="price-grid">
+<input id="submitButtonOne" type="button" value="PRICE: 100K - 300K">
+<input id="submitButtonFour" type="button" value="PRICE: 400K - 600K">
+<input id="submitButtonSeven" type="button" value="PRICE: 700K AND UP">
+</div>
+<div class="beds-grid">
+<input id="ButtonBedOne" type="button" value="BEDS: 1 - 3">
+<input id="ButtonBedFour" type="button" value="BEDS: 4 - 6">
+<input id="ButtonBedSeven" type="button" value="BEDS: 7 AND UP">
+</div>
+<div class="baths-grid">
+<input id="ButtonBathOne" type="button" value="BATH: 1 - 2">
+<input id="ButtonBathThree" type="button" value="BATH: 3 AND UP">
+</div>
 
 
 
@@ -62,21 +64,25 @@ ${st.filterSeven.map((firstFilter)=>{
 
  function firstHome(firstFilter){
     return `
-    <div class="buy-homes">
-<div class="containers">
-<div class="galleries">
-   <div class="gallery-item">
-   <img class="gallery-image" src="${firstFilter.pic} class="w-100" alt="">
+   
+<div class="contain">
+<div class="gal">
+   <div class="gal-item">
+   <img class="gal-image" src="${firstFilter.pic}" width="400" alt="">
+   <div id="home-item">
             <h2>Price:${firstFilter.price}</h2>
             <h3>Bed:${firstFilter.beds}</h3>
             <h3>Bath:${firstFilter.bath}</h3>
+            <button>ADD TO FAVORITE</button>
             </div>
             </div>
             </div>
-        </div>`;
+            
+        </div>
+        `;
 
 }
-//<img class="gallery-image" src="${home.picture}" alt="">
+
 
 
 
