@@ -41,42 +41,76 @@ function addEventListeners(st) {
     
   // index.js
 if (st.view === "Buyhomes") {
+  state.Favorites.homePrice = [];
+  state.Favorites.homeBed = [];
+  state.Favorites.homeBath = [];
+  document.querySelectorAll("#favButton").forEach(button => {
+    button.addEventListener("click", event => {
+      state.Favorites.homePrice.push((event.target.attributes["data-price"].value));
+      state.Favorites.homeBed.push((event.target.attributes["data-bed"].value))
+      state.Favorites.homeBath.push((event.target.attributes["data-bath"].value))
+    });
+  })
   document.querySelectorAll("#submitButtonOne").forEach(button => {
     button.addEventListener("click", () => {
-    
-      document.querySelector(".filterOne").classList.toggle("toggleOff");
+      
+      document.querySelector(".filterFour").className = 'hide';
+      document.querySelector(".filterSeven").className = 'hide';
+     
+ 
     });
   });
 
   document.querySelectorAll("#submitButtonFour").forEach(button => {
     button.addEventListener("click", () => {
-      document.querySelector(".filterFour").classList.toggle("toggleOff");
-      console.log("I was clicked");
-    });
-  });
+     let filterFourDisplay = document.querySelector(".filterFour");
+     let filterOneDisplay = document.querySelector(".filterOne");
+    let filterSevenDisplay = document.querySelector(".filterSeven");
+    
+    if (filterFourDisplay.style.display === "none") {
+    filterFourDisplay.style.display = "block";
+    } else {
+    filterFourDisplay.style.display = "none";
+    }
+    filterOneDisplay.style.display = "none";
+    filterSevenDisplay.style.display = "none";
+    
+    console.log("I was clicked");
+           });
+         });
+     
 
   document.querySelectorAll("#submitButtonSeven").forEach(button => {
     button.addEventListener("click", () => {
-      document.querySelector(".filterSeven").classList.toggle("toggleOff");
-      console.log("I was clicked");
+      
+      document.querySelector(".filterFour").classList.toggle("toggleOff");
+      document.querySelector(".filterOne").classList.toggle("toggleOff");
+      
     });
   });
 }else{
-  if(st.view === "Restaurant"){
-    state.Restaurant.finalPrice = [];
-    let judahPrice = document.getElementById("button-two")
-    judahPrice.addEventListener("click", ()=>{
-      state.Restaurant.finalPrice.push(parseInt(judahPrice.dataset.judah))
-      console.log(judahPrice.dataset.judah)
 
-      })
-    //   let winePrice = document.getElementById("button-one");
-    //   winePrice.addEventListener("click", ()=>{
-    //     state.Restaurant.finalPrice.push(winePrice.dataset.wine)
-    //     console.log(winePrice.dataset.wine)
-    // });
-  }
-}
+if(st.view === "Favorites"){
+  console.log('h')
+}else{
+
+
+
+
+
+
+
+  
+  if(st.view === "Restaurant"){
+//here
+
+    //here
+
+ }
+
+    
+   }
+ }
 
 
 
@@ -95,19 +129,19 @@ router.hooks({
 
     switch (page) {
 
-      case "Home":
+      case "News":
         axios
           .get(
             `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.WEATHER_API_KEY}&q=st.%20louis`
           )
           .then((response) => {
-            state.Home.weather = {};
+            state.News.weather = {};
             // console.log(response, state.Home.weather);
-            state.Home.weather.city = response.data.name;
-            state.Home.weather.temp = response.data.main.temp;
-            state.Home.weather.feelsLike = response.data.main.feels_like;
-            state.Home.weather.humidity = response.data.main.humidity;
-            state.Home.weather.description =
+            state.News.weather.city = response.data.name;
+            state.News.weather.temp = response.data.main.temp;
+            state.News.weather.feelsLike = response.data.main.feels_like;
+            state.News.weather.humidity = response.data.main.humidity;
+            state.News.weather.description =
               response.data.weather[0]["description"];
             done();
           })

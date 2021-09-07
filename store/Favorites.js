@@ -1,4 +1,7 @@
 export default {
   header: "",
-  view: "Favorites"
+  view: "Favorites",
+  homePrice: [],
+  homeBath:[],
+  homeBath:[]
 };

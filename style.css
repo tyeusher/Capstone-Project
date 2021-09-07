@@ -14,10 +14,12 @@
  justify-content: space-between;
  align-items: center;
  transform: 0.6s;
- 
+
 
 
 }
+
+
 
 .top-nav .title{
 position: relative;
@@ -813,3 +815,67 @@ text-align: center;
   display: none !important;
 }
 
+.dropdown{
+  color: #00613e;
+}
+
+.cart-total-price{
+  color: #00613e;
+}
+
+.dropdownbtn{
+  background-color: #00613e;
+}
+.hOne{
+  color: #AA0114;
+  font-weight: bold;
+  letter-spacing: 0.30em;
+  text-align: center;
+}
+.food-order{
+ align-items: center;
+}
+.dropdownbtn{
+ align-items: center;
+}
+
+.cart-items{
+ text-align: center;
+ font-size: 30px;
+}
+.cart-total{
+  text-align: center;
+  font-size: 40px;
+}
+
+.removeButton{
+background-color: #AA0114;;
+  opacity: 0.6;
+}
+
+.cart-quantity-input{
+  height: 20px;
+}
+
+.btn-danger{
+  background-color: #AA0114;;
+}
+
+.shop-item-title{
+  color: white;
+}
+
+/* .hide{
+  opacity: 0.08;
+} */
+
+.filterFour{
+  display: block;
+}
+
+.filterOne{
+  display: block;
+}
+.filterSeven{
+  display: block;
+}

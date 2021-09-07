@@ -91,13 +91,34 @@ export default (st) => html`
 </div>
 </div>
 
-<div class="first-pic">
-  <img src="${food1}" width="400" height="500">
-  <div class="dee">
-  <p class="detail-title">WATER INTO WINE</p>
-  <p class="detail-price">20 SHECKELS</p>
-  <button id="button-one" data-wine="20"><span>Hover Me</span></button>
+
+<div class="container">
+    <div class="shop-items">
+        
+        <div class="shop-item">
+            <span class="shop-item-title">Judas's Special</span>
+            <img class="shop-item-image" src="${food2}" width="300" ">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$12.99</span>
+                <br>
+                <button class="shop-item-button" type="button">Order</button>
+            </div>
+            
+
 </div>
+
+<div class="shop-item">
+            <span class="shop-item-title">WATER INTO WINE</span>
+            <img class="shop-item-image rs" src="${food1}" width="300">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$14.99</span>
+                <br>
+                <button class="shop-item-button"type="button">ORDER</button>
+           
+        </div>
+    </div>
+
+
 
 </div>
 
@@ -123,14 +144,32 @@ export default (st) => html`
 </div>
 </div>
 
-<div class="second-pic">
-  <div class="dee2">
-  <button id="button-two" data-judah="35"><span>Hover Me</span></button>
-  <p class="detail-title">Judas's Special</p>
-  <p class="detail-price">35 SHECKELS</p>
-</div>
-<img src="${food2}" width="400" height="500">
-</div>
+
+<div class="food-order">
+    <h1 class="hOne">Orders</h1>
+<div class="dropdown">
+  
+  <div class="dropdown-content">
+    <div class="cart-items">
+        
+        
+    </div>
+    <div class="dropdown-content">
+      <div class="cart-items">
+          
+          
+      </div>
+
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">
+        </span>
+    </div>
+    
+
+    </div>
+
+
 
 
 <div class="this">
@@ -146,18 +185,6 @@ export default (st) => html`
 </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="wrapper">
 <div class="row my-row">

@@ -26,7 +26,7 @@ const kelvinToFahrenheit = (kelvinTemp) =>
   <h3 class="divider">Explore Mars</h3>
   <div class="wrapper">
     <div class="eachButton">
-      <a href="Home"><span>Buy Homes!</span></a>
+      <a href="BuyHomes"><span>Buy Homes!</span></a>
       <a href="Restaurant"><span>Restaurants!</span></a>
       <a href="Shopping"><span>Shopping</span></a>
       <a href="News"><span>Mars News</span></a>
@@ -65,12 +65,7 @@ const kelvinToFahrenheit = (kelvinTemp) =>
 </div>
 </div>
 
-<h3 id="weather">
-  Temperature in ${st.weather.city} is
-  ${kelvinToFahrenheit(st.weather.temp)}F, feels like
-  ${kelvinToFahrenheit(st.weather.feelsLike)}F. Humidity is at
-  ${st.weather.humidity}%, and the weather is ... ${st.weather.description}
-</h3>
+
 
 
 `;

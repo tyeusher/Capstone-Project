@@ -72,7 +72,8 @@ ${st.filterSeven.map((firstFilter)=>{
             <h2>Price:${firstFilter.price}</h2>
             <h3>Bed:${firstFilter.beds}</h3>
             <h3>Bath:${firstFilter.bath}</h3>
-            <button>ADD TO FAVORITE</button>
+            <input id="favButton" type="button" value ="ADD TO FAVORITE" 
+            data-price="${firstFilter.price}" data-bed="${firstFilter.beds}" data-bath="${firstFilter.bath}">
             </div>
             </div>
             </div>
