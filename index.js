@@ -41,14 +41,20 @@ function addEventListeners(st) {
     
   // index.js
 if (st.view === "Buyhomes") {
-  state.Favorites.homePrice = [];
-  state.Favorites.homeBed = [];
-  state.Favorites.homeBath = [];
+
   document.querySelectorAll("#favButton").forEach(button => {
     button.addEventListener("click", event => {
-      state.Favorites.homePrice.push((event.target.attributes["data-price"].value));
-      state.Favorites.homeBed.push((event.target.attributes["data-bed"].value))
-      state.Favorites.homeBath.push((event.target.attributes["data-bath"].value))
+      let pric = button.dataset.price;
+      let bat = button.dataset.bath;
+      let be = button.dataset.beds;
+    
+      state.Favorites.dispHomes = st.homes.filter(home=>{
+        // console.log(home.price, pric )
+        return home.price === pric && home.bath === bath && home.beds === be
+        
+      })
+      // st.Favorites.dispHomes.push((event.target.attributes["data-id"].value));
+     
     });
   })
   
@@ -98,19 +104,15 @@ if (st.view === "Buyhomes") {
 }else{
 
 if(st.view === "Favorites"){
-  console.log('h')
+  
 }else{
-
-
-
-
 
 
 
   
   if(st.view === "Restaurant"){
 //here
-
+ 
     //here
 
  }

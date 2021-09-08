@@ -9,6 +9,9 @@ import home6 from "/images/he6.jpg";
 import home7 from "/images/marsHome3.jpg";
 
 export default (st) => html`
+<div class="buy-home-title">
+<h3 class="divider">BUY HOMES</h3>
+</div>
   <div class="buy-home">
     <div class="home-grid">
       <div class="price-grid">
@@ -54,9 +57,9 @@ export default (st) => html`
           id="ButtonBedFour"
           class="budden filterButton"
           type="button"
-          value="BEDS: 4 - 7"
+          value="BEDS: 4 - 6"
           data-min=4
-          data-max=7
+          data-max=6
           data-filter="beds"
         />
         <input
@@ -114,11 +117,10 @@ function firstHome(firstFilter) {
   return `
    
 <div class="contain">
-
    <div class="gal-item">
    <img class="gal-image" src="${firstFilter.pic}" width="400" alt="">
    <div id="home-item">
-            <h2>Price:${firstFilter.price}</h2>
+            <h2>Price:${firstFilter.price}00,000</h2>
             <h3>Bed:${firstFilter.beds}</h3>
             <h3>Bath:${firstFilter.bath}</h3>
             <input id="favButton" type="button" value ="ADD TO FAVORITE" 
@@ -132,59 +134,3 @@ function firstHome(firstFilter) {
         
         `;
 }
-
-// <div class="home-buttons">
-//                 <form class="homes-price">
-
-//                 <input type="submit" name="submit" value="1 - 3" />
-//                 <input type="submit" name="submit" value="4 - 6" />
-//                 <input type="submit" name="submit" value="7 - 8" />
-//                 </form>
-
-//                 <div class="homes-bed">
-//                 <a href="#"><button id="Price" class="round"  purchase>1 - 2</button></a>
-//                 <a href="#"><button id="Price" class="round" purchase>3 -4</button></a>
-//                 <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
-//                 <a href="#"><button id="Price" class="round" purchase>$90.00</button></a>
-//                 </div>
-
-//                 <div class="homes-bath">
-//                 <a href="#"><button class="round" purchase>1 - 2</button></a>
-//                 <a href="#"><button class="round" purchase>3 -4</button></a>
-//                 <a href="#"><button class="round" purchase>$90.00</button></a>
-//                 <a href="#"><button class="round" purchase>$90.00</button></a>
-//                 </div>
-
-//                 </div>
-
-// <div class="buy-home">
-// <div class="container">
-// <div class="gallery">
-
-//     <div class="gallery-item">
-//         <img class="gallery-image gallery-image-one"  src="${home1}" data-minprice="1" data-maxprice="3" alt="">
-//     </div>
-
-//     <div class="gallery-item">
-//         <img class="gallery-image" src="${home2}" alt="e">
-//     </div>
-
-//     <div class="gallery-item">
-//         <img class="gallery-image" src="${home3}" alt="">
-//     </div>
-
-//     <div class="gallery-item">
-//         <img class="gallery-image" src="${home4}" alt="">
-//     </div>
-
-//     <div class="gallery-item">
-//         <img class="gallery-image" src="${home5}" alt="">
-//     </div>
-
-//     <div class="gallery-item">
-//         <img class="gallery-image" src="${home6}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-//     </div>
-// </div>
-// </div>
-// </div>
-// `;

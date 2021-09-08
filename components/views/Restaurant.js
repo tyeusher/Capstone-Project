@@ -1,12 +1,12 @@
 import html from "html-literal"
-// import logo from "../../images/vintage.jpg";
-// import art from "../../images/art2.jpg";
-// import food1 from "../../images/locust.jpg";
-// import food2 from "../../images/break.jpg";
-// import back from "../../images/lord.jpg";
-// import man1 from "../../images/man2.jpg";
-// import man2 from "../../images/man3.png";
-// import man3 from "../../images/man.jpg";
+import logo from "../../images/vintage.jpg";
+import art from "../../images/art2.jpg";
+import food1 from "../../images/locust.jpg";
+import food2 from "../../images/break.jpg";
+import back from "../../images/lord.jpg";
+import man1 from "../../images/man2.jpg";
+import man2 from "../../images/man3.png";
+import man3 from "../../images/man.jpg";
 
 export default (st) => html`
 <div class="rest-view">

@@ -165,6 +165,46 @@ font-size:25px;
 .homeView a:hover:after{
   width: 100%;
 }
+.divider{
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  margin: 2em;
+  font-size: 25px;
+}
+
+.buy-home-title{
+  position: relative;
+  top: 10em;
+  align-items: center;
+ 
+}
+
+.divider:before, .divider:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.divider:before {
+  background: linear-gradient(to right, transparent, #818078);
+  right: .5em;
+  margin-left: -50%;
+}
+
+.divider:after {
+  background: linear-gradient(to right, #818078, transparent);
+  left: .5em;
+  margin-right: -50%;
+}
+
+
+
+
+
 
 .homeView .divider {
   text-align: center;
@@ -244,14 +284,6 @@ font-weight: bold;
   font-weight: bold;
 }
 
-.contain {
-  margin-top: 5em;
-  display: flex;
-  flex-wrap: wrap; 
-  flex-direction: row;
-  align-items: center; 
-  justify-content: space-evenly;  
-} 
 
 #home-item{
   text-align: center;
@@ -338,10 +370,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
     padding: 0;
 }
 
-.shop-store{
-  margin-top: 10em;
-}
+.heading .shoeBay{
 
+
+}
 
 
 
@@ -359,7 +391,6 @@ font-family: "Amatic SC", cursive;
 	margin-right: auto;
 	background-color: #00613e;
   font-family: "Amatic SC", cursive;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -388,7 +419,7 @@ font-family: "Amatic SC", cursive;
     opacity: 0.6;
     position: relative;
 
-    top: 2.5em;
+    top: 0em;
     font-family: "Amatic SC", cursive;
 
 
@@ -873,16 +904,16 @@ background-color: #AA0114;;
   opacity: 0.08;
 }
 
-.filterFour{
-  display: block;
-}
-
 .filterOne{
-  display: block;
-}
-.filterSeven{
-  display: block;
-}
+  display: flex;
+  margin-top: 5em; 
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-evenly;  
+} 
+
+
 
 .top-after{
   font-size: 45px;
