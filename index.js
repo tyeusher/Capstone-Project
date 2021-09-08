@@ -51,36 +51,31 @@ if (st.view === "Buyhomes") {
       state.Favorites.homeBath.push((event.target.attributes["data-bath"].value))
     });
   })
-  document.querySelectorAll("#submitButtonOne").forEach(button => {
-    button.addEventListener("click", () => {
-      
-      document.querySelector(".filterFour").className = 'hide';
-      document.querySelector(".filterSeven").className = 'hide';
+  
+    document.querySelectorAll('.filterButton').forEach(button=>{
+      button.addEventListener('click', (event)=>{
+        let min = button.dataset.min;
+        let max = button.dataset.max;
+        let filter = button.dataset.filter;
+        console.log(min, max, filter)
+        console.log(st)
+        if(filter === 'price'){
+         st.displayedHomes = st.homes.filter(home=>{
+            return home.price >= min && home.price <= max 
+            
+          })
+
+        }
+        //if ocnditional if filter === beds then do 
      
+        if(filter === 'allHomes'){
+          st.displayedHomes = st.homes
+        }
+        console.log(st.displayedHomes)
+        render(st);
+      })
+    })  
  
-    });
-    
-  });
-  document.querySelectorAll("#submitButtonFour").forEach(button => {
-    button.addEventListener("click", () => {
-      
-      document.querySelector(".filterOne").className = 'hide';
-      document.querySelector(".filterSeven").className = 'hide';
-     
- 
-    });
-    
-  });
-  document.querySelectorAll("#submitButtonSeven").forEach(button => {
-    button.addEventListener("click", () => {
-      
-      document.querySelector(".filterOne").className = 'hide';
-      document.querySelector(".filterFour").className = 'hide';
-     
- 
-    });
-    
-  });
 
  
   
@@ -157,17 +152,17 @@ case "Buyhomes":
     .get("https://mars-after-earth.herokuapp.com/homes")
     .then(response => {
       state.Buyhomes.homes = response.data;
-    
-      state.Buyhomes.filterOne = state.Buyhomes.homes.filter(
-        home => home.price <= 3
+      state.Buyhomes.displayedHomes = response.data;
+      // state.Buyhomes.filterOne = state.Buyhomes.homes.filter(
+      //   home => home.price <= 3
         
-      );
-      state.Buyhomes.filterFour = state.Buyhomes.homes.filter(
-        home => home.price >= 4 && home.price <= 6
-      );
-      state.Buyhomes.filterSeven = state.Buyhomes.homes.filter(
-        home => home.price >= 7
-      );
+      // );
+      // state.Buyhomes.filterFour = state.Buyhomes.homes.filter(
+      //   home => home.price >= 4 && home.price <= 6
+      // );
+      // state.Buyhomes.filterSeven = state.Buyhomes.homes.filter(
+      //   home => home.price >= 7
+      // );
       done();
     })
     .catch(err => console.log(err));

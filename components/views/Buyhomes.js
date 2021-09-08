@@ -14,21 +14,30 @@ export default (st) => html`
       <div class="price-grid">
         <input
           id="submitButtonOne"
-          class="budden"
+          class="budden filterButton"
           type="button"
           value="PRICE: 100K - 300K"
+          data-min=1
+          data-max=3
+          data-filter="price"
         />
         <input
           id="submitButtonFour"
-          class="budden"
+          class="budden filterButton"
           type="button"
           value="PRICE: 400K - 600K"
+          data-min=4
+          data-max=6
+          data-filter="price"
         />
         <input
           id="submitButtonSeven"
-          class="budden"
+          class="budden filterButton"
           type="button"
           value="PRICE: 700K AND UP"
+          data-min=7
+          data-max=999
+          data-filter="price"
         />
       </div>
       <div class="beds-grid">
@@ -49,6 +58,9 @@ export default (st) => html`
           class="budden"
           type="button"
           value="BEDS: 7 AND UP"
+          data-min=7
+          data-max=999
+          data-filter="beds"
         />
       </div>
       <div class="baths-grid">
@@ -57,40 +69,38 @@ export default (st) => html`
           class="budden"
           type="button"
           value="BATH: 1 - 2"
+          data-min=1
+          data-max=2
+          data-filter="baths"
         />
         <input
           id="ButtonBathThree"
           class="budden"
           type="button"
           value="BATH: 3 AND UP"
+          data-min=3
+          data-max=999
+          data-filter="baths"
+        />
+        <input
+          id="buttonAllHomes"
+          class="budden filterButton"
+          type="button"
+          value="ALL"
+          data-min=0
+          data-max=0
+          data-filter="allHomes"
         />
       </div>
     </div>
-
-    <div id="filtereds">
-      <div class="filterOne">
-        ${st.filterOne
+    <div class="filterOne">
+        ${st.displayedHomes
           .map((firstFilter) => {
             return firstHome(firstFilter);
           })
           .join("")}
       </div>
-      <div class="filterFour">
-        ${st.filterFour
-          .map((firstFilter) => {
-            return firstHome(firstFilter);
-          })
-          .join("")}
-      </div>
-
-      <div class="filterSeven">
-        ${st.filterSeven
-          .map((firstFilter) => {
-            return firstHome(firstFilter);
-          })
-          .join("")}
-      </div>
-    </div>
+    
   </div>
 `;
 
