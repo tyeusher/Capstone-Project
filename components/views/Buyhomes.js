@@ -43,19 +43,25 @@ export default (st) => html`
       <div class="beds-grid">
         <input
           id="ButtonBedOne"
-          class="budden"
+          class="budden filterButton"
           type="button"
           value="BEDS: 1 - 3"
+          data-min=1
+          data-max=3
+          data-filter="beds"
         />
         <input
           id="ButtonBedFour"
-          class="budden"
+          class="budden filterButton"
           type="button"
-          value="BEDS: 4 - 6"
+          value="BEDS: 4 - 7"
+          data-min=4
+          data-max=7
+          data-filter="beds"
         />
         <input
           id="ButtonBedSeven"
-          class="budden"
+          class="budden filterButton"
           type="button"
           value="BEDS: 7 AND UP"
           data-min=7
@@ -66,16 +72,16 @@ export default (st) => html`
       <div class="baths-grid">
         <input
           id="ButtonBathOne"
-          class="budden"
+          class="budden filterButton"
           type="button"
-          value="BATH: 1 - 2"
+          value="BATHS: 1 - 2"
           data-min=1
           data-max=2
           data-filter="baths"
         />
         <input
           id="ButtonBathThree"
-          class="budden"
+          class="budden filterButton"
           type="button"
           value="BATH: 3 AND UP"
           data-min=3

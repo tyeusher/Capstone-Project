@@ -67,7 +67,21 @@ if (st.view === "Buyhomes") {
 
         }
         //if ocnditional if filter === beds then do 
-     
+       if(filter === 'beds'){
+        st.displayedHomes = st.homes.filter(home=>{
+          return home.beds >= min && home.beds <= max 
+          
+        })
+       }
+
+       if(filter === 'baths'){
+        st.displayedHomes = st.homes.filter(home=>{
+          return home.bath >= min && home.bath <= max 
+          
+        })
+       }
+
+      
         if(filter === 'allHomes'){
           st.displayedHomes = st.homes
         }
