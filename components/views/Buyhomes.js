@@ -8,64 +8,97 @@ import home5 from "/images/he5.jpg";
 import home6 from "/images/he6.jpg";
 import home7 from "/images/marsHome3.jpg";
 
-
 export default (st) => html`
-<div class="buy-home">
-<div class="home-grid">
-<div class="price-grid"> 
-<input id="submitButtonOne" class="budden" type="button" value="PRICE: 100K - 300K">
-<input id="submitButtonFour" class="budden" type="button" value="PRICE: 400K - 600K">
-<input id="submitButtonSeven" class="budden" type="button" value="PRICE: 700K AND UP">
-</div>
-<div class="beds-grid">
-<input id="ButtonBedOne" class="budden" type="button" value="BEDS: 1 - 3">
-<input id="ButtonBedFour" class="budden" type="button" value="BEDS: 4 - 6">
-<input id="ButtonBedSeven" class="budden" type="button" value="BEDS: 7 AND UP">
-</div>
-<div class="baths-grid">
-<input id="ButtonBathOne" class="budden" type="button" value="BATH: 1 - 2">
-<input id="ButtonBathThree" class="budden" type="button" value="BATH: 3 AND UP">
-</div>
+  <div class="buy-home">
+    <div class="home-grid">
+      <div class="price-grid">
+        <input
+          id="submitButtonOne"
+          class="budden"
+          type="button"
+          value="PRICE: 100K - 300K"
+        />
+        <input
+          id="submitButtonFour"
+          class="budden"
+          type="button"
+          value="PRICE: 400K - 600K"
+        />
+        <input
+          id="submitButtonSeven"
+          class="budden"
+          type="button"
+          value="PRICE: 700K AND UP"
+        />
+      </div>
+      <div class="beds-grid">
+        <input
+          id="ButtonBedOne"
+          class="budden"
+          type="button"
+          value="BEDS: 1 - 3"
+        />
+        <input
+          id="ButtonBedFour"
+          class="budden"
+          type="button"
+          value="BEDS: 4 - 6"
+        />
+        <input
+          id="ButtonBedSeven"
+          class="budden"
+          type="button"
+          value="BEDS: 7 AND UP"
+        />
+      </div>
+      <div class="baths-grid">
+        <input
+          id="ButtonBathOne"
+          class="budden"
+          type="button"
+          value="BATH: 1 - 2"
+        />
+        <input
+          id="ButtonBathThree"
+          class="budden"
+          type="button"
+          value="BATH: 3 AND UP"
+        />
+      </div>
+    </div>
 
-</div>
+    <div id="filtereds">
+      <div class="filterOne">
+        ${st.filterOne
+          .map((firstFilter) => {
+            return firstHome(firstFilter);
+          })
+          .join("")}
+      </div>
+      <div class="filterFour">
+        ${st.filterFour
+          .map((firstFilter) => {
+            return firstHome(firstFilter);
+          })
+          .join("")}
+      </div>
 
-<div id = "filtereds">
-
-<div class="filterOne">
-${st.filterOne.map((firstFilter)=>{
-    return firstHome(firstFilter)
-})
-.join("")
-
-}
-</div>
-<div class="filterFour">
-
-${st.filterFour.map((firstFilter)=>{
-    return firstHome(firstFilter);
-}).join("")
-}</div>
-
-<div class="filterSeven">
-
-${st.filterSeven.map((firstFilter)=>{
-    return firstHome(firstFilter);
-}).join("")
-
-}
-
-</div>
-
-
-</div>
+      <div class="filterSeven">
+        ${st.filterSeven
+          .map((firstFilter) => {
+            return firstHome(firstFilter);
+          })
+          .join("")}
+      </div>
+    </div>
+  </div>
 `;
 
-
- function firstHome(firstFilter){
-    return `
+function firstHome(firstFilter) {
+  return `
    
 <div class="contain">
-<div class="gal">
+
    <div class="gal-item">
    <img class="gal-image" src="${firstFilter.pic}" width="400" alt="">
    <div id="home-item">
@@ -76,41 +109,14 @@ ${st.filterSeven.map((firstFilter)=>{
             data-price="${firstFilter.price}" data-bed="${firstFilter.beds}" data-bath="${firstFilter.bath}">
             </div>
             </div>
-            </div>
+            
             
         </div>
-        
-       
-       
-        `;
-       
 
+        
+        `;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 // <div class="home-buttons">
 //                 <form class="homes-price">
 
@@ -134,7 +140,6 @@ ${st.filterSeven.map((firstFilter)=>{
 //                 </div>
 
 //                 </div>
-
 
 // <div class="buy-home">
 // <div class="container">

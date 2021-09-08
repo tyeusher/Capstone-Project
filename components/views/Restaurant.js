@@ -4,6 +4,10 @@ import art from "../../images/art2.jpg";
 import food1 from "../../images/locust.jpg";
 import food2 from "../../images/break.jpg";
 import back from "../../images/lord.jpg";
+import man1 from "../../images/man2.jpg";
+import man2 from "../../images/man3.png";
+import man3 from "../../images/man.jpg";
+
 export default (st) => html`
 <div class="rest-view">
 
@@ -80,9 +84,7 @@ export default (st) => html`
 <div class="tit">
 <h1>Taste and See</h1>
 <br>
-<br>
-<h2>Happy Hours</h2>
-<br>
+<h2>Happy Hours 10am - 3pm</h2>
 <br>
 <h3>Mon - Fri 9AM - 12PM</h3>
 </div>
@@ -97,18 +99,18 @@ export default (st) => html`
         
         <div class="shop-item">
             <span class="shop-item-title">Judas's Special</span>
-            <img class="shop-item-image" src="${food2}" width="300" ">
+            <img class="shop-item-image one" src="${food2}" width="300" ">
             <div class="shop-item-details">
                 <span class="shop-item-price">$12.99</span>
                 <br>
-                <button class="shop-item-button" type="button">Order</button>
+                <button class="shop-item-button" type="button">ORDER</button>
             </div>
             
 
 </div>
 
 <div class="shop-item">
-            <span class="shop-item-title">WATER INTO WINE</span>
+            <span class="shop-item-title">Water into Wine</span>
             <img class="shop-item-image rs" src="${food1}" width="300">
             <div class="shop-item-details">
                 <span class="shop-item-price">$14.99</span>
@@ -133,9 +135,7 @@ export default (st) => html`
 <div class="tit">
 <h1>Taste and See</h1>
 <br>
-<br>
-<h2>Happy Hours</h2>
-<br>
+
 <br>
 <h3>Mon - Fri 9AM - 12PM</h3>
 </div>
@@ -180,53 +180,42 @@ export default (st) => html`
 <h2>Location: 4638 Easter Driver</h2>
 <br>
 
-<h3>Hours</h3>
-<h3>Mon - Sun 8am - 10pm</h3>
 </div>
 
 </div>
 
-<div class="wrapper">
-<div class="row my-row">
-  <div class="col-xs-4 my-col">
-<img src="man.jpg" class="image--cover">
+<div class="wrapper-review">
+<div class="gridz">
+  <div class="client-review">
+<img src="${man1}" class="imagez one">
 <div class="details">
   <p>James Joner</p>
-  <h6>"Yummy in my Tummy"</h6>
+  <h2>"Yummy in my Tummy"</h2>
 </div>
 </div>
 
 
-<div class="col-xs-4 my-col">
-<img src="man2.jpg" alt="" class="image--cover" />
+<div class="client-review">
+<img src="${man2}" alt="" class="imagez" />
 <div class="details">
   <p>Alexander Coder</p>
-  <h6>"Good food befor my Voyage"</h6>
+  <h2>"Good food befor my Voyage"</h2>
 </div>
 </div>
 
 
-<div class="col-xs-4 my-col">
-<img src="man3.png" alt="" class="image--cover" />
+<div class="client-review">
+<img src="${man3}" alt="" class="imagez" />
 <div class="details">
   <p>Manifo Jame</p>
-  <h6>"Wow. Just Wow"</h6>
-</div>
-</div>
-
-<div class="col-xs-4 my-col">
-<img src="man4.jpg" alt="" class="image--cover" />
-<div class="details">
-  <p>Jose Dias</p>
-  <h6>"Ill be Back. Sure Thing."</h6>
-</div>
-</div>
+  <h2>"Wow. Just Wow, so good"</h2>
 </div>
 
+</div>
 
 </div>
 
-<div>
+<!-- <div>
 ${st.finalPrice.map((firstFilter)=>{
    console.log(firstFilter)
 }).join("")
@@ -234,7 +223,7 @@ ${st.finalPrice.map((firstFilter)=>{
 
 
 } 
-</div>
+</div> -->
 
 
 `;

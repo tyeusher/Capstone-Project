@@ -69,11 +69,16 @@ color: black;
 }
 .about-mars{
   font-size: 15px;
+  position: relative;
+  bottom: 40px;
+  margin-top:  120px;
+ 
 }
 
 .homeView{
   position: relative;
-  bottom: 13em;
+  bottom: 5em;
+ 
 }
 
 .buy-home{
@@ -242,13 +247,11 @@ font-weight: bold;
 .contain {
   margin-top: 5em;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-
+  align-items: center; 
+  justify-content: space-evenly;  
+} 
 
 #home-item{
   text-align: center;
@@ -271,12 +274,13 @@ font-weight: bold;
 
 .gal-item {
 	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
+	/* flex: 1 0 24rem; */
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
   font-family: 'Zen Loop', cursive;
+  size: 60px;
 }
 
 .gal-image {
@@ -865,9 +869,9 @@ background-color: #AA0114;;
   color: white;
 }
 
-/* .hide{
+.hide{
   opacity: 0.08;
-} */
+}
 
 .filterFour{
   display: block;
@@ -878,4 +882,83 @@ background-color: #AA0114;;
 }
 .filterSeven{
   display: block;
+}
+
+.top-after{
+  font-size: 45px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
+
+#fav-button{
+height: 20px;
+}
+
+.imagez{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 50px;
+
+  object-fit: cover;
+  object-position: center ;
+}
+
+.client-review img{
+  border-radius: 50%;
+}
+
+.gridz{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+
+.details p{
+  margin-left: 40px;
+  font-size: ;
+}
+
+.details h2{
+  margin-left: 2px;
+}
+
+.wrapper-review{
+  margin-bottom: 25px;
+}
+
+.this{
+  margin-bottom: 50px;
+}
+
+.shop-item .one{
+margin-left: 20px;
+}
+
+.shop-item{
+  font-size: 40px;
+margin-left: 10px;
+color: #d35400;;
+}
+
+.shop-item-button{
+  height: 40px;
+  width: 50px;
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+}
+
+////
+.con{
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-evenly;  
+}
+
+.con #home-details{
+  align-items: center;
 }

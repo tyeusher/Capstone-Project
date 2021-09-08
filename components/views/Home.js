@@ -5,13 +5,12 @@ import dragon from "../../images/neo.jpg";
 import joker from "../../images/joker.png";
 
 
-const kelvinToFahrenheit = (kelvinTemp) =>
-  Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
 
 
 
 
   export default (st) => html`
+
 <div class="homeView">
   <div class="welcome">
     <h1>WELCOME TO AFTER EARTH</h1>
@@ -21,7 +20,6 @@ const kelvinToFahrenheit = (kelvinTemp) =>
 
 
 
-  <button id="btn">kmrkf</button>
 
   <h3 class="divider">Explore Mars</h3>
   <div class="wrapper">

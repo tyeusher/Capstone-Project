@@ -59,35 +59,33 @@ if (st.view === "Buyhomes") {
      
  
     });
+    
   });
-
   document.querySelectorAll("#submitButtonFour").forEach(button => {
     button.addEventListener("click", () => {
-     let filterFourDisplay = document.querySelector(".filterFour");
-     let filterOneDisplay = document.querySelector(".filterOne");
-    let filterSevenDisplay = document.querySelector(".filterSeven");
-    
-    if (filterFourDisplay.style.display === "none") {
-    filterFourDisplay.style.display = "block";
-    } else {
-    filterFourDisplay.style.display = "none";
-    }
-    filterOneDisplay.style.display = "none";
-    filterSevenDisplay.style.display = "none";
-    
-    console.log("I was clicked");
-           });
-         });
+      
+      document.querySelector(".filterOne").className = 'hide';
+      document.querySelector(".filterSeven").className = 'hide';
      
-
+ 
+    });
+    
+  });
   document.querySelectorAll("#submitButtonSeven").forEach(button => {
     button.addEventListener("click", () => {
       
-      document.querySelector(".filterFour").classList.toggle("toggleOff");
-      document.querySelector(".filterOne").classList.toggle("toggleOff");
-      
+      document.querySelector(".filterOne").className = 'hide';
+      document.querySelector(".filterFour").className = 'hide';
+     
+ 
     });
+    
   });
+
+ 
+  
+
+  
 }else{
 
 if(st.view === "Favorites"){
@@ -158,11 +156,8 @@ case "Buyhomes":
   axios
     .get("https://mars-after-earth.herokuapp.com/homes")
     .then(response => {
-      response.data.forEach(home => {
-        state.Buyhomes.homes.push(home);
-        // console.log("list of homes", state.Buyhomes.homes);
-        // console.log(state.Buyhomes.filterFour);
-      });
+      state.Buyhomes.homes = response.data;
+    
       state.Buyhomes.filterOne = state.Buyhomes.homes.filter(
         home => home.price <= 3
         

@@ -2,6 +2,6 @@ export default {
   header: "",
   view: "Favorites",
   homePrice: [],
-  homeBath:[],
+  homeBed:[],
   homeBath:[]
 };
