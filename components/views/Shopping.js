@@ -16,7 +16,7 @@ export default () => html
 		<span class="shoeBay">montgomerey bay shoes number 44</span>
         </div>
 
-	<div class="item burgers">
+	<div class="item">
 		<h2>Price</h2>
 		<p><span>MENS Price</span>
 			<span>$90.00</span>
@@ -32,7 +32,7 @@ export default () => html
 		</p>
 	</div>
 
-	<div class="item hot_dog">
+	<div class="item">
 		<h2>COLORS</h2>
 		<p><span>RED AND BLACK</span> <span>3</span></p>
 		<p><span>BLUE AND YELLOW</span> <span>0</span></p>

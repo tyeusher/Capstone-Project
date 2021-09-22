@@ -413,6 +413,11 @@ font-family: "Amatic SC", cursive;
   font-weight: bold;
   font-family: "Amatic SC", cursive;
 }
+
+.news{
+  margin-top: 10em;
+}
+
 .shop-store .heading span {
 	font-size: 40px;
     color: #AA0114;

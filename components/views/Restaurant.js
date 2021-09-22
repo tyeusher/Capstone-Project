@@ -101,7 +101,7 @@ export default (st) => html`
             <span class="shop-item-title">Judas's Special</span>
             <img class="shop-item-image one" src="${food2}" width="300" ">
             <div class="shop-item-details">
-                <span class="shop-item-price">$12.99</span>
+                <span class="shop-item-price">$35</span><span> Sheckels</span>
                 <br>
                 <button class="shop-item-button" type="button">ORDER</button>
             </div>
@@ -110,10 +110,10 @@ export default (st) => html`
 </div>
 
 <div class="shop-item">
-            <span class="shop-item-title">Water into Wine</span>
+            <span class="shop-item-title">Water to Wine</span>
             <img class="shop-item-image rs" src="${food1}" width="300">
             <div class="shop-item-details">
-                <span class="shop-item-price">$14.99</span>
+                <span class="shop-item-price">$14.99</span><span> Sheckels</span>
                 <br>
                 <button class="shop-item-button"type="button">ORDER</button>
            

@@ -102,7 +102,7 @@ export default (st) => html`
         />
       </div>
     </div>
-    <div class="filterOne">
+    <div class="filterOne">           
         ${st.displayedHomes
           .map((firstFilter) => {
             return firstHome(firstFilter);
@@ -113,7 +113,7 @@ export default (st) => html`
   </div>
 `;
 
-function firstHome(firstFilter) {
+function firstHome(firstFilter) {     //THE DATA IS BEING PASSED IN HERE AND IT WILL STRUCTORE BASED ON THE TEMPLATE BELOW
   return `
    
 <div class="contain">

@@ -53,22 +53,22 @@ app.use(logging);
 
 app
   .route("/")
-  .get((request, response) => {
+  .get((request, response) => {                              //<<<GET REQUEST FOR MAIN TAB
     response.send(JSON.stringify({message: "No 4gGETfwf routeszc available on root URI." }), 404);
   })
 // .catch(err => console.log(err));
 const port = process.env.PORT || 4040;
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-app.route("/").get((request, response) => {
+app.route("/").get((request, response) => {                  //<<<GET REQUEST AND THE RESPONSE OF DATA YOU WANT TO SEND
   response.send("HELLO WORLD");
 });
 
-app.route("/homes").get((request, response)=>{
+app.route("/homes").get((request, response)=>{              //<<<GET REQUEST FOR HOMES  AND THE RESPONSE OF DATA YOU WANT TO SEND
     response.send(JSON.stringify(homes))
 })
 
-app.route("/shopping").get((request, response)=>{
+app.route("/shopping").get((request, response)=>{          //<<<GET REQUEST FOR HOMES  AND THE RESPONSE OF DATA YOU WANT TO SEND
   response.send(JSON.stringify(shoppingItems))
 })
 

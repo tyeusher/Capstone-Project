@@ -6,9 +6,6 @@ import joker from "../../images/joker.png";
 
 
 
-
-
-
   export default (st) => html`
 
 <div class="homeView">
